@@ -156,11 +156,23 @@ nav .rightBar button {
   letter-spacing: 1.275px;
 }
 
+@keyframes expandAndDeflate {
+  0% {
+    transform: scale(1); /* Start with the original size */
+  }
+  50% {
+    transform: scale(1.2); /* Expand to 1.2 times the size */
+  }
+  100% {
+    transform: scale(1); /* Deflate back to the original size */
+  }
+}
 .circle1 {
   position: absolute;
   top: 150px;
   left: 20px;
   z-index: -1;
+  animation: expandAndDeflate 8s linear infinite;
 }
 
 .circle2 {
@@ -168,6 +180,7 @@ nav .rightBar button {
   top: 150px;
   left: 180px;
   z-index: -1;
+  animation: expandAndDeflate 6s linear infinite;
 }
 
 .circle3 {
@@ -175,6 +188,7 @@ nav .rightBar button {
   top: 550px;
   left: 480px;
   z-index: -1;
+  animation: expandAndDeflate 10s linear infinite;
 }
 
 .circle4 {
@@ -182,6 +196,7 @@ nav .rightBar button {
   top: 590px;
   left: 380px;
   z-index: -1;
+  animation: expandAndDeflate 6s linear infinite;
 }
 
 /* Define keyframes for the animation */
