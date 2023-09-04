@@ -6,7 +6,10 @@ nav{
     align-items: center;
     margin: 10px;
     font-family: 'Inter', sans-serif;
-    // border: 1px solid black;
+    border-image: linear-gradient(to right, #A3F9FF, #cb8af3); /* Gradient colors */
+    border-image-slice: 1; /* Slices the border into equal parts */
+    border-image-width: 0 0 1px 0; /* Apply the gradient only to the bottom border */
+    border-image-outset: 0;
 
     .leftBar, .rightBar{
         display: flex;
@@ -106,10 +109,22 @@ nav{
     // Right
     .right-first-section{
         width: 50vw;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        // border: 1px solid white;
+        .img-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 1px solid white;
+            height: 85%;
+            width: 100%;
+        }
         .img-container{
+            // border: 1px solid white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -120,6 +135,37 @@ nav{
             box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.25);
             img{
                 width: 500px;
+            }
+        }
+        .img-caption{
+            height: 15%;
+            width: 100%;
+            // border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            
+            .one-big{
+                font-size: 60px;
+                font-family: 'Lexend Exa', sans-serif;
+                color: $primary-white-text;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            .overview-cap{
+                text-align: right;
+                color: $secondary-white-text;
+                .sub-header{
+                    font-family: 'Inter', sans-serif;
+                    letter-spacing: 5.5px;
+                    font-weight: 600;
+                    color: $primary-white-text;
+                }
+                .caption-sub{
+                    font-family: 'Lato', sans-serif;
+                    font-size: 12px;
+                    letter-spacing: 1.275px;
+                }
             }
         }
     }
@@ -135,5 +181,17 @@ nav{
     position: absolute;
     top: 150px;
     left: 180px;
+    z-index: -1;
+}
+.circle3{
+    position: absolute;
+    top: 550px;
+    left: 480px;
+    z-index: -1;
+}
+.circle4{
+    position: absolute;
+    top: 590px;
+    left: 380px;
     z-index: -1;
 }

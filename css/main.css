@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
   font-family: "Inter", sans-serif;
+  -o-border-image: linear-gradient(to right, #A3F9FF, #cb8af3);
+     border-image: linear-gradient(to right, #A3F9FF, #cb8af3); /* Gradient colors */
+  border-image-slice: 1; /* Slices the border into equal parts */
+  border-image-width: 0 0 1px 0; /* Apply the gradient only to the bottom border */
+  border-image-outset: 0;
 }
 nav .leftBar, nav .rightBar {
   display: flex;
@@ -93,9 +99,18 @@ nav .rightBar button {
 }
 .firstSection .right-first-section {
   width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstSection .right-first-section .img-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 85%;
+  width: 100%;
 }
 .firstSection .right-first-section .img-container {
   display: flex;
@@ -110,6 +125,35 @@ nav .rightBar button {
 .firstSection .right-first-section .img-container img {
   width: 500px;
 }
+.firstSection .right-first-section .img-caption {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.firstSection .right-first-section .img-caption .one-big {
+  font-size: 60px;
+  font-family: "Lexend Exa", sans-serif;
+  color: #F3F3F3;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.firstSection .right-first-section .img-caption .overview-cap {
+  text-align: right;
+  color: #D9D9D9;
+}
+.firstSection .right-first-section .img-caption .overview-cap .sub-header {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 5.5px;
+  font-weight: 600;
+  color: #F3F3F3;
+}
+.firstSection .right-first-section .img-caption .overview-cap .caption-sub {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.275px;
+}
 
 .circle1 {
   position: absolute;
@@ -122,6 +166,20 @@ nav .rightBar button {
   position: absolute;
   top: 150px;
   left: 180px;
+  z-index: -1;
+}
+
+.circle3 {
+  position: absolute;
+  top: 550px;
+  left: 480px;
+  z-index: -1;
+}
+
+.circle4 {
+  position: absolute;
+  top: 590px;
+  left: 380px;
   z-index: -1;
 }
 
