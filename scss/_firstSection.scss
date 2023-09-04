@@ -6,7 +6,10 @@ nav{
     align-items: center;
     margin: 10px;
     font-family: 'Inter', sans-serif;
-    // border: 1px solid black;
+    border-image: linear-gradient(to right, #A3F9FF, #cb8af3); /* Gradient colors */
+    border-image-slice: 1; /* Slices the border into equal parts */
+    border-image-width: 0 0 1px 0; /* Apply the gradient only to the bottom border */
+    border-image-outset: 0;
 
     .leftBar, .rightBar{
         display: flex;
@@ -16,6 +19,13 @@ nav{
     .leftBar li{
         margin-right: 20px;
         color: $tertiary-white-text;
+        a{
+            text-decoration: none;
+            color: $tertiary-white-text;
+            &:hover{
+                color: $primary-white-text;
+            }
+        }
     }
     .rightBar{
         button{
@@ -23,11 +33,16 @@ nav{
             padding: 0;
             margin: 0;
             cursor: pointer;
-            border: 1px solid  $primary-blue-text;
+            border: 1px solid  #4c6466;
             border-radius: 10px;
             width: 150px;
             height: 35px;
-            color: $primary-blue-text;
+            color: #4c6466;
+            &:hover{
+                box-shadow: 0px 0px 20px 10px rgba(143, 227, 241, 0.25);
+                border: 1px solid $primary-blue-text;
+                color: $primary-blue-text;
+            }
         }
     }
 }
@@ -51,6 +66,10 @@ nav{
             display: flex;
             flex-direction: column;
             align-items: center;
+            a{
+                text-decoration: none;
+                color: $primary-white-text;
+            }
         }
         i{  
             cursor: pointer;
@@ -64,6 +83,12 @@ nav{
             height: 55px;
             border: 1px solid #7C8EC2;
             box-shadow: 1px 1px 10px 2px rgba(255, 251, 251, 0.25);
+            &:hover{
+                border: 1px solid #A3F9FF;
+                box-shadow: 0px 0px 20px 10px rgba(143, 227, 241, 0.25);
+                background-color: #e3d9e9;
+                color: $body-section;
+            }
         }
     }
 
@@ -88,7 +113,8 @@ nav{
         }
         p, caption{
             color:$secondary-white-text;
-            font-family: 'Inika', serif;
+            letter-spacing: 1.275px;
+            font-family: 'Lato', sans-serif;
             text-align: justify;
         }
         button{
@@ -100,16 +126,31 @@ nav{
             border: 1px solid #FFF;
             background: linear-gradient(90deg, #A3F9FF 4.78%, #E8C3FF 100%);
             box-shadow: 0px 4px 40px 0px rgba(255, 255, 255, 0.25);
+            &:hover{
+                box-shadow: 0px 0px 20px 10px rgba(143, 227, 241, 0.25);
+            }
         }
     }
 
     // Right
     .right-first-section{
         width: 50vw;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        // border: 1px solid white;
+        .img-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 1px solid white;
+            height: 85%;
+            width: 100%;
+        }
         .img-container{
+            // border: 1px solid white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -122,18 +163,100 @@ nav{
                 width: 500px;
             }
         }
+        .img-caption{
+            height: 15%;
+            width: 100%;
+            // border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            
+            .one-big{
+                font-size: 60px;
+                font-family: 'Lexend Exa', sans-serif;
+                color: $primary-white-text;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            .overview-cap{
+                text-align: right;
+                color: $secondary-white-text;
+                .sub-header{
+                    font-family: 'Inter', sans-serif;
+                    letter-spacing: 5.5px;
+                    font-weight: 600;
+                    color: $primary-white-text;
+                }
+                .caption-sub{
+                    font-family: 'Lato', sans-serif;
+                    font-size: 12px;
+                    letter-spacing: 1.275px;
+                }
+            }
+        }
     }
 }
 
+@keyframes expandAndDeflate {
+    0% {
+        transform: scale(1); /* Start with the original size */
+    }
+    50% {
+        transform: scale(1.2); /* Expand to 1.2 times the size */
+    }
+    100% {
+        transform: scale(1); /* Deflate back to the original size */
+    }
+}
 .circle1{
     position: absolute;
     top: 150px;
     left: 20px;
     z-index: -1;
+    animation: expandAndDeflate 8s linear infinite;
 }
 .circle2{
     position: absolute;
     top: 150px;
     left: 180px;
     z-index: -1;
+    animation: expandAndDeflate 6s linear infinite;
+}
+.circle3{
+    position: absolute;
+    top: 550px;
+    left: 480px;
+    z-index: -1;
+    animation: expandAndDeflate 10s linear infinite;
+}
+.circle4{
+    position: absolute;
+    top: 590px;
+    left: 380px;
+    z-index: -1;
+    animation: expandAndDeflate 6s linear infinite;
+}
+
+/* Define keyframes for the animation */
+@keyframes glitch-animation {
+    0%, 100% {
+        opacity: 0; /* Hide the image at the start and end of the animation */
+    }
+    50% {
+        opacity: 1; /* Show the image in the middle of the animation */
+    }
+}
+
+/* Apply the animation to the images */
+.img-container img {
+    position: absolute;
+    top: 50;
+    left: 100;
+    width: 100%;
+    animation: glitch-animation 10s linear infinite; /* Adjust the duration for the total time */
+}
+
+/* Delay the start of the animation for the "Me" image */
+#meImage {
+    animation-delay: 5s; /* Delay the start of the animation for 2 seconds */
 }

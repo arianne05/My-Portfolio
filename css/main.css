@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
   font-family: "Inter", sans-serif;
+  -o-border-image: linear-gradient(to right, #A3F9FF, #cb8af3);
+     border-image: linear-gradient(to right, #A3F9FF, #cb8af3); /* Gradient colors */
+  border-image-slice: 1; /* Slices the border into equal parts */
+  border-image-width: 0 0 1px 0; /* Apply the gradient only to the bottom border */
+  border-image-outset: 0;
 }
 nav .leftBar, nav .rightBar {
   display: flex;
@@ -17,15 +23,27 @@ nav .leftBar li {
   margin-right: 20px;
   color: #858585;
 }
+nav .leftBar li a {
+  text-decoration: none;
+  color: #858585;
+}
+nav .leftBar li a:hover {
+  color: #F3F3F3;
+}
 nav .rightBar button {
   background-color: transparent;
   padding: 0;
   margin: 0;
   cursor: pointer;
-  border: 1px solid #82CAFF;
+  border: 1px solid #4c6466;
   border-radius: 10px;
   width: 150px;
   height: 35px;
+  color: #4c6466;
+}
+nav .rightBar button:hover {
+  box-shadow: 0px 0px 20px 10px rgba(143, 227, 241, 0.25);
+  border: 1px solid #82CAFF;
   color: #82CAFF;
 }
 
@@ -47,6 +65,10 @@ nav .rightBar button {
   flex-direction: column;
   align-items: center;
 }
+.firstSection .left-first-section ul a, .firstSection .left-first-section li a {
+  text-decoration: none;
+  color: #F3F3F3;
+}
 .firstSection .left-first-section i {
   cursor: pointer;
   margin-bottom: 15px;
@@ -59,6 +81,12 @@ nav .rightBar button {
   height: 55px;
   border: 1px solid #7C8EC2;
   box-shadow: 1px 1px 10px 2px rgba(255, 251, 251, 0.25);
+}
+.firstSection .left-first-section i:hover {
+  border: 1px solid #A3F9FF;
+  box-shadow: 0px 0px 20px 10px rgba(143, 227, 241, 0.25);
+  background-color: #e3d9e9;
+  color: #1F232F;
 }
 .firstSection .center-first-section {
   display: flex;
@@ -78,7 +106,8 @@ nav .rightBar button {
 }
 .firstSection .center-first-section p, .firstSection .center-first-section caption {
   color: #D9D9D9;
-  font-family: "Inika", serif;
+  letter-spacing: 1.275px;
+  font-family: "Lato", sans-serif;
   text-align: justify;
 }
 .firstSection .center-first-section button {
@@ -91,11 +120,23 @@ nav .rightBar button {
   background: linear-gradient(90deg, #A3F9FF 4.78%, #E8C3FF 100%);
   box-shadow: 0px 4px 40px 0px rgba(255, 255, 255, 0.25);
 }
+.firstSection .center-first-section button:hover {
+  box-shadow: 0px 0px 20px 10px rgba(143, 227, 241, 0.25);
+}
 .firstSection .right-first-section {
   width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstSection .right-first-section .img-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 85%;
+  width: 100%;
 }
 .firstSection .right-first-section .img-container {
   display: flex;
@@ -110,12 +151,53 @@ nav .rightBar button {
 .firstSection .right-first-section .img-container img {
   width: 500px;
 }
+.firstSection .right-first-section .img-caption {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.firstSection .right-first-section .img-caption .one-big {
+  font-size: 60px;
+  font-family: "Lexend Exa", sans-serif;
+  color: #F3F3F3;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.firstSection .right-first-section .img-caption .overview-cap {
+  text-align: right;
+  color: #D9D9D9;
+}
+.firstSection .right-first-section .img-caption .overview-cap .sub-header {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 5.5px;
+  font-weight: 600;
+  color: #F3F3F3;
+}
+.firstSection .right-first-section .img-caption .overview-cap .caption-sub {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.275px;
+}
 
+@keyframes expandAndDeflate {
+  0% {
+    transform: scale(1); /* Start with the original size */
+  }
+  50% {
+    transform: scale(1.2); /* Expand to 1.2 times the size */
+  }
+  100% {
+    transform: scale(1); /* Deflate back to the original size */
+  }
+}
 .circle1 {
   position: absolute;
   top: 150px;
   left: 20px;
   z-index: -1;
+  animation: expandAndDeflate 8s linear infinite;
 }
 
 .circle2 {
@@ -123,6 +205,46 @@ nav .rightBar button {
   top: 150px;
   left: 180px;
   z-index: -1;
+  animation: expandAndDeflate 6s linear infinite;
+}
+
+.circle3 {
+  position: absolute;
+  top: 550px;
+  left: 480px;
+  z-index: -1;
+  animation: expandAndDeflate 10s linear infinite;
+}
+
+.circle4 {
+  position: absolute;
+  top: 590px;
+  left: 380px;
+  z-index: -1;
+  animation: expandAndDeflate 6s linear infinite;
+}
+
+/* Define keyframes for the animation */
+@keyframes glitch-animation {
+  0%, 100% {
+    opacity: 0; /* Hide the image at the start and end of the animation */
+  }
+  50% {
+    opacity: 1; /* Show the image in the middle of the animation */
+  }
+}
+/* Apply the animation to the images */
+.img-container img {
+  position: absolute;
+  top: 50;
+  left: 100;
+  width: 100%;
+  animation: glitch-animation 10s linear infinite; /* Adjust the duration for the total time */
+}
+
+/* Delay the start of the animation for the "Me" image */
+#meImage {
+  animation-delay: 5s; /* Delay the start of the animation for 2 seconds */
 }
 
 * {
