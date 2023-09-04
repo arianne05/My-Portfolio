@@ -120,6 +120,9 @@ nav .rightBar button:hover {
   background: linear-gradient(90deg, #A3F9FF 4.78%, #E8C3FF 100%);
   box-shadow: 0px 4px 40px 0px rgba(255, 255, 255, 0.25);
 }
+.firstSection .center-first-section button:hover {
+  box-shadow: 0px 0px 20px 10px rgba(143, 227, 241, 0.25);
+}
 .firstSection .right-first-section {
   width: 50vw;
   height: 100%;
