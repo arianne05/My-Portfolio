@@ -1,0 +1,123 @@
+@import './_variable.scss';
+
+.secondSection{
+    background-color: $body-section-second;
+    position: relative;
+    height: 100vh;
+}
+
+.items-modal{
+    display: flex;
+    align-items: center;
+    // width: 500px;
+    // border: 1px solid black;
+
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $body-section;
+        width: 73px;
+        height: 73px;
+        border-radius: 50%;
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+        margin-right: 10px;
+    }
+    .description{
+        width: 230px;
+        // border: 1px solid black;
+        .item-title{
+            font-family: 'Inter';
+            letter-spacing: 1.8px;
+            font-weight: 600;
+            hr{
+                width: 150px;
+                border: none;
+                height: 2px;
+                background-color: $body-section;
+                margin-bottom: 10px;
+                margin-top: 5px;
+            }
+        }
+        label{
+            // font-size: 10px;
+            text-align: justify;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            
+        }
+        a{
+            display: flex;
+            justify-content: end;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            color: $body-section;
+        }
+    }
+}
+
+//CIRCLING ANIMATION
+.circle-container {
+    width: 430px;
+    height: 430px;
+    border: 5px solid $body-section;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circling-green {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: $body-section;
+    position: absolute;
+    animation-duration: 10s; /* Slower animation, changed to 8 seconds */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.green1, .green2, .green3, .green4, .green5 {
+    animation-name: circle; /* All circling-green elements use the same animation */
+}
+
+.green1 {
+    animation-delay: 0s; /* No delay for the first element */
+}
+
+.green2 {
+    animation-delay: 2s; /* 1-second delay for the second element */
+}
+
+.green3 {
+    animation-delay: 4s; /* 2-second delay for the third element */
+}
+
+.green4 {
+    animation-delay: 6s; /* 3-second delay for the fourth element */
+}
+
+.green5 {
+    animation-delay: 8s; /* 4-second delay for the fifth element */
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg) translate(-225px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-225px) rotate(-360deg);
+    }
+}
