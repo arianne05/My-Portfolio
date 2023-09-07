@@ -174,7 +174,7 @@ nav{
     align-items: center;
     justify-content: end;
     color: $primary-white-text;
-
+    
     .one-big{
         font-size: 60px;
         font-family: 'Lexend Exa', sans-serif;
@@ -194,6 +194,37 @@ nav{
             letter-spacing: 1.275px;
         }
     }
+    
+}
+
+.img-caption2{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    color: $body-section;
+    
+    .one-big{
+        font-size: 60px;
+        font-family: 'Lexend Exa', sans-serif;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .overview-cap{
+        text-align: left;
+        .sub-header{
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 5.5px;
+            font-weight: 600;
+        }
+        .caption-sub{
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            letter-spacing: 1.275px;
+        }
+    }
+    
 }
 
 @keyframes expandAndDeflate {

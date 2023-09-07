@@ -57,6 +57,14 @@
     }
 }
 
+.second-section-container{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 80vh;
+}
+
 //CIRCLING ANIMATION
 .circle-container {
     width: 430px;
