@@ -154,6 +154,145 @@
     text-align: center;
 }
 
+.profileModal{ //Personal Info
+    border-radius: 50px 200px 50px 50px;
+    border: 2px solid #cecece;
+    background: rgba(49, 49, 49, 0.70);
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.25);
+    width: 85%;
+    height: 90%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: $primary-white-text;
+    // overflow: hidden;
+
+    .main-prof-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        // border: 1px solid red;
+        position: relative;
+
+        //CONTENT PROFILE 1
+        .content-prof1{
+            // border: 1px solid red;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            .AQCircle{
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 26px;
+                color: $body-section;
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+                background: linear-gradient(140deg, #A3F9FF 12.94%, #E8C3FF 95.44%);
+                border-radius: 50%;
+            }
+            .fullname{
+                
+                text-align: left;
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 4.7px;
+                }
+                label{
+                    font-family: 'Lato';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    letter-spacing: 1.275px;
+                }
+            }
+        }
+
+        //CONTENT PROFILE 2
+        .content-prof2{
+            font-family: 'Inter', sans-serif;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            .first-border-prof{
+                height: 50%;
+                width: 60%;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid #AFF1FF;
+                
+                .personal-info-item{
+                    text-align: left;
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        margin-right: 100px;
+                        margin-bottom: 10px;
+                        color: $primary-white-text;
+                    }
+                    label{
+                        color: $secondary-white-text;
+                        text-align: left;
+                        margin-left: 50px;
+                    }
+                }
+            }
+
+            .header-sec-prof{
+                display: flex;
+                justify-content: start;
+                margin-left: 15px;
+                margin-bottom: 5px;
+            }
+
+            .second-border-prof{
+                border: 2px solid #AFF1FF;
+                width: 93%;
+                height: 35%;
+                overflow-y: auto;
+                border-radius: 20px;
+                padding: 20px;
+
+                .container-item{
+                    cursor: pointer;
+                    display: flex;
+                    // background-color: #E8C3FF;
+                    border: 1px solid $tertiary-white-text;
+                    width: auto;
+                    height: auto;
+                    border-radius:5px;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    i{
+                        margin-right: 10px;
+                    }
+                    &:hover{
+                        background-color: rgb(187, 132, 212);
+                    }
+                }
+            }
+        }
+    }
+
+    img{
+        position: absolute;
+        top: 300px;
+        left: 600px;
+        width: 500px;
+        height: 500px;
+    }
+}
+
 /* Close button */
 .close {
     position: absolute;

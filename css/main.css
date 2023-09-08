@@ -419,6 +419,129 @@ nav .rightBar button:hover {
   text-align: center;
 }
 
+.profileModal {
+  border-radius: 50px 200px 50px 50px;
+  border: 2px solid #cecece;
+  background: rgba(49, 49, 49, 0.7);
+  box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.25);
+  width: 85%;
+  height: 90%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  color: #F3F3F3;
+}
+.profileModal .main-prof-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+.profileModal .main-prof-container .content-prof1 {
+  display: flex;
+  align-items: center;
+}
+.profileModal .main-prof-container .content-prof1 .AQCircle {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 26px;
+  color: #1F232F;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(140deg, #A3F9FF 12.94%, #E8C3FF 95.44%);
+  border-radius: 50%;
+}
+.profileModal .main-prof-container .content-prof1 .fullname {
+  text-align: left;
+}
+.profileModal .main-prof-container .content-prof1 .fullname p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.7px;
+}
+.profileModal .main-prof-container .content-prof1 .fullname label {
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.275px;
+}
+.profileModal .main-prof-container .content-prof2 {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+.profileModal .main-prof-container .content-prof2 .first-border-prof {
+  height: 50%;
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #AFF1FF;
+}
+.profileModal .main-prof-container .content-prof2 .first-border-prof .personal-info-item {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.profileModal .main-prof-container .content-prof2 .first-border-prof .personal-info-item p {
+  margin-right: 100px;
+  margin-bottom: 10px;
+  color: #F3F3F3;
+}
+.profileModal .main-prof-container .content-prof2 .first-border-prof .personal-info-item label {
+  color: #D9D9D9;
+  text-align: left;
+  margin-left: 50px;
+}
+.profileModal .main-prof-container .content-prof2 .header-sec-prof {
+  display: flex;
+  justify-content: start;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.profileModal .main-prof-container .content-prof2 .second-border-prof {
+  border: 2px solid #AFF1FF;
+  width: 93%;
+  height: 35%;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 20px;
+}
+.profileModal .main-prof-container .content-prof2 .second-border-prof .container-item {
+  cursor: pointer;
+  display: flex;
+  border: 1px solid #858585;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.profileModal .main-prof-container .content-prof2 .second-border-prof .container-item i {
+  margin-right: 10px;
+}
+.profileModal .main-prof-container .content-prof2 .second-border-prof .container-item:hover {
+  background-color: rgb(187, 132, 212);
+}
+.profileModal img {
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  width: 500px;
+  height: 500px;
+}
+
 /* Close button */
 .close {
   position: absolute;
