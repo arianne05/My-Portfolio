@@ -293,6 +293,22 @@
     }
 }
 
+.educationModal{
+    border-radius: 50px 200px 50px 50px;
+    border: 2px solid #cecece;
+    background: rgba(49, 49, 49, 0.70);
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.25);
+    width: 85%;
+    height: 80%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: $primary-white-text;
+}
+
 /* Close button */
 .close {
     position: absolute;
@@ -305,3 +321,31 @@
 .close:hover {
     color: red;
 }
+
+// TABS
+.tabs {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tab-content {
+    display: none;
+    /* ... other tab content styles ... */
+  }
+  
+  /* Style the active tab button */
+  .tab-button.active {
+    background-color: #ccc;
+  }
+  
+  /* Display the active tab content */
+  .tab-content.active {
+    display: block;
+  }

@@ -211,6 +211,7 @@
     </section>
 
     <!-- Modal container -->
+    <!-- Profile Modal -->
     <div id="myModal1" class="modal">
       <div class="modal-content profileModal">
           <!-- Close BTN -->
@@ -302,12 +303,33 @@
 
       </div>
     </div>
-
+  
+  <!-- Education Modal -->
   <div id="myModal2" class="modal">
-    <div class="modal-content">
+    <div class="modal-content educationModal">
         <span id="closeModalBtn2" class="close">&times;</span>
-        <h2>Educational Background</h2>
-        <p>This is Modal 2 content.</p>
+       
+  
+        <div id="tab1" class="tab-content">
+          <!-- Content for Tab 1 goes here -->
+          <div class="tab1-main">
+            <div class="tab1-left">
+              <p>Content for tab 1</p>
+            </div>
+          </div>
+        </div>
+    
+        <div id="tab2" class="tab-content">
+          <!-- Content for Tab 2 goes here -->
+          <p>Content for Tab 2...</p>
+        </div>
+
+        <!-- Tabs button -->
+        <div class="tabs">
+          <button class="tab-button" onclick="openTab('tab1')"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="tab-button" onclick="openTab('tab2')"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
     </div>
   </div>
 
@@ -339,3 +361,4 @@
 </html>
 <script src="./js/img-transition.js"></script>
 <script src="./js/modal.js"></script>
+<script src="./js/tabs.js"></script>
