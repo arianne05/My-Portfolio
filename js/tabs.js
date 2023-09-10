@@ -18,15 +18,4 @@ function openTab(tabName) {
   document.getElementById(tabName).style.display = "block";
   event.currentTarget.classList.add("active");
 }
-
-// Show the modal when needed (e.g., a button click)
-function openModal() {
-  var modal = document.querySelector(".modal");
-  modal.style.display = "block";
-}
-
-// Close the modal
-function closeModal() {
-  var modal = document.querySelector(".modal");
-  modal.style.display = "none";
-}
+openTab("tab1");

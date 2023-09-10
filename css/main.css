@@ -558,6 +558,91 @@ nav .rightBar button:hover {
   color: #F3F3F3;
 }
 
+.tab-content {
+  width: 100%;
+  height: 90%;
+}
+
+.tab1-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.tab1-main .tab1-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.tab1-main .tab1-left img {
+  width: auto;
+  height: 100%; /* Set the height to 100% to fill the container vertically */
+  -o-object-fit: contain;
+     object-fit: contain; /* Fit the image within the container while maintaining its aspect ratio */
+  max-width: none; /* Remove the max-width constraint */
+}
+.tab1-main .tab2-right {
+  width: 100%;
+  height: 100%;
+}
+.tab1-main .tab2-right .tab2-text {
+  margin-left: 40px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+.tab1-main .tab2-right .inika-font {
+  font-family: "Inika";
+}
+.tab1-main .tab2-right .lexend-font {
+  color: #F3F3F3;
+  font-family: "Lexend Exa", sans-serif;
+  font-size: 64px;
+  margin-bottom: 5px;
+}
+.tab1-main .tab2-right .inter-font {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.5px;
+  margin-bottom: 5px;
+}
+.tab1-main .tab2-right .tab2-card-images {
+  font-family: "Lexend Exa", sans-serif;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+.tab1-main .tab2-right .tab2-card-images .text-card-img {
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.tab1-main .tab2-right .tab2-card-images .text-card-img .one-text {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+.tab1-main .tab2-right .tab2-card-images .card img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+.tab1-main .tab2-right .tab2-card-images .onebigcard img {
+  width: 200px;
+  height: 220px;
+  border-radius: 20px;
+}
+
 /* Close button */
 .close {
   position: absolute;
@@ -572,8 +657,9 @@ nav .rightBar button:hover {
 }
 
 .tabs {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
 }
 
 .tab-button {
@@ -581,6 +667,13 @@ nav .rightBar button:hover {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 .tab-content {
