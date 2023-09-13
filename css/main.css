@@ -569,20 +569,28 @@ nav .rightBar button:hover {
   display: flex;
 }
 .tab1-main .tab1-left {
-  width: 50%;
-  height: 100%;
+  margin-top: 3%;
+  width: 60%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   border-radius: 20px;
 }
-.tab1-main .tab1-left img {
+.tab1-main .tab1-left .slider {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 2s ease; /* Animation duration and easing */
+}
+.tab1-main .tab1-left .slider img {
   width: auto;
-  height: 100%; /* Set the height to 100% to fill the container vertically */
+  height: 100%;
   -o-object-fit: contain;
-     object-fit: contain; /* Fit the image within the container while maintaining its aspect ratio */
-  max-width: none; /* Remove the max-width constraint */
+     object-fit: contain;
+  max-width: none;
 }
 .tab1-main .tab2-right {
   width: 100%;
@@ -590,7 +598,7 @@ nav .rightBar button:hover {
 }
 .tab1-main .tab2-right .tab2-text {
   margin-left: 40px;
-  height: 60%;
+  height: 55%;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -658,7 +666,6 @@ nav .rightBar button:hover {
 
 .tabs {
   text-align: left;
-  margin-top: 20px;
   display: flex;
 }
 
