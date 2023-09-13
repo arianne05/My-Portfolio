@@ -613,6 +613,9 @@ nav .rightBar button:hover {
   font-size: 64px;
   margin-bottom: 5px;
 }
+.tab1-main .tab2-right .smallerSize {
+  font-size: 50px;
+}
 .tab1-main .tab2-right .inter-font {
   font-family: "Inter";
   font-style: normal;

@@ -363,12 +363,17 @@
         .inika-font{
             font-family: 'Inika';
         }
+
         .lexend-font{
             color:$primary-white-text;
             font-family: 'Lexend Exa', sans-serif;
             font-size: 64px;
             margin-bottom: 5px;
         }
+        .smallerSize{
+            font-size: 50px;
+        }
+
         .inter-font{
             font-family: 'Inter';
             font-style: normal;
