@@ -807,8 +807,7 @@ nav .rightBar button:hover {
   position: relative;
 }
 .left-con .img-con-skill {
-  border: 1px solid white;
-  height: 90%;
+  height: 85%;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -892,6 +891,54 @@ nav .rightBar button:hover {
     transform: rotate(360deg) translate(-225px) rotate(-360deg);
   }
 }
+.top-skill {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lexend Exa";
+}
+.top-skill .item-PL {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.top-skill .item-text {
+  text-align: left;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.top-skill .itemImgCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #A3F9FF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.top-skill .itemImgCon img {
+  width: 40px;
+}
+.top-skill .itemImgCon .pythonItem {
+  width: 30px;
+}
+.top-skill .itemImgCon .javaItem {
+  width: 20px;
+}
+.top-skill .redItem {
+  background-color: #E66D6D;
+}
+.top-skill .blueItem {
+  background-color: #8DB7E8;
+}
+.top-skill .greenItem {
+  background-color: #A0EFA8;
+}
+
 * {
   margin: 0;
   padding: 0;
