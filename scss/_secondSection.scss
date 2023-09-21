@@ -568,22 +568,22 @@
     display: flex;
     width: 100%;
     height: 100%;
-    border: 1px solid white;
+    // border: 1px solid white;
 }
 
 .left-con{
-    width: 50%;
+    width: 40%;
     height: 100%;
-    border: 1px solid red;
+    // border: 1px solid red;
     position: relative;
     .img-con-skill{
         // border: 1px solid white;
         height: 85%;
         display: flex;
-        align-items: end;
+        align-items: center;
         justify-content: center;
         img{
-            width: 70%;
+            width: 60%;
             z-index: 2; /* Set the z-index to a value greater than the circles */
             display: block;
         }
@@ -591,8 +591,8 @@
 }
 
 .skill-circle {
-    width: 430px;
-    height: 430px;
+    width: 130px;
+    height: 130px;
     // border: 5px solid $body-section;
     position: absolute;
     top: 0;
@@ -660,10 +660,10 @@
 
 @keyframes circleskill {
     0% {
-        transform: rotate(0deg) translate(-225px) rotate(0deg);
+        transform: rotate(0deg) translate(-150px) rotate(0deg);
     }
     100% {
-        transform: rotate(360deg) translate(-225px) rotate(-360deg);
+        transform: rotate(360deg) translate(-150px) rotate(-360deg);
     }
 }
 
@@ -715,3 +715,117 @@
     }
     
 }
+
+.right-con{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    // border: 1px solid white;
+    .nav-skill{
+        width: 30%;
+        height: 80%;
+        // border: 1px solid white;
+        text-align: left;
+        margin-top: 10%;
+        font-size: 15px;
+        padding: 20px;
+        ul,li{
+            cursor: pointer;
+            list-style: none;
+            // margin-bottom: 15px;
+        }
+        li{
+            padding: 10px;
+            &:hover{
+                background-color: #8DB7E8;
+                border-radius: 10px;
+            }
+        }
+    }
+    .main-container{
+        width: 60%;
+        height: 80%;
+        margin-right: 10%;
+        margin-top: 10%;
+        border-radius: 20px;
+        border: 0.4px solid #DCDCDC;
+        background: rgba(217, 217, 217, 0.10);
+        padding: 20px;
+
+        .itemSkillLoader{
+            width: 100%;
+            text-align: left;
+            li{
+                margin: 20px 0;
+                padding: 10px;
+                list-style: none;
+            }
+            .bar{
+                background: #353b48;
+                display: block;
+                height: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                &:hover{
+                    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                }
+                span{
+                    height: 10px;
+                    float: left;
+                    background: linear-gradient(90deg, #9AD7F9 0%, #E9A5F5 54.91%);
+                }
+            }
+            .php{
+                width: 90%;
+                animation: php 3s;
+            }
+            .python{
+                width: 70%;
+                animation: python 3s;
+            }
+            .java{
+                width: 50%;
+                animation: java 3s;
+            }
+            @keyframes php{
+                0%{
+                    width: 0%;
+                }
+                100%{
+                    width: 90%;
+                }
+            }
+            @keyframes python{
+                0%{
+                    width: 0%;
+                }
+                100%{
+                    width: 70%;
+                }
+            }
+            @keyframes java{
+                0%{
+                    width: 0%;
+                }
+                100%{
+                    width: 50%;
+                }
+            }
+        }
+       
+    }
+}
+
+//tabs
+/* Initially hide all tab contents except the first one */
+.tab-content {
+    display: none;
+  }
+  
+  /* Show the first tab content */
+  #language {
+    display: block;
+  }
+  
