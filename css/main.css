@@ -961,6 +961,10 @@ nav .rightBar button:hover {
   background-color: #8DB7E8;
   border-radius: 10px;
 }
+.right-con .nav-skill li.active {
+  background-color: #8DB7E8;
+  border-radius: 10px;
+}
 .right-con .main-container {
   width: 60%;
   height: 80%;

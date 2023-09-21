@@ -12,6 +12,14 @@
 
     // Show the specified tab content
     document.getElementById(tabId).style.display = 'block';
+
+    // Remove the 'active' class from all tabs
+    tabs.forEach(tab => {
+      tab.classList.remove('active');
+    });
+
+    // Add the 'active' class to the selected tab
+    document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
   }
 
   // Add click event listeners to each tab
@@ -25,6 +33,6 @@
     });
   });
 
-  // Initially, show the "Program Language" tab
+  // Initially, show the "Program Language" tab and mark it as active
   showTab('language');
 
