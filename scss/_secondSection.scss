@@ -884,6 +884,22 @@
 }
 
 //ACHIEVEMENTS MODAL
+.awardModal{
+    border-radius: 50px 200px 50px 50px;
+    border: 2px solid #cecece;
+    background: rgba(49, 49, 49, 0.70);
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.25);
+    width: 85%;
+    height: 80%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: $primary-white-text;
+}
+
 .main-award-con{
     display: flex;
     width: 100%;
@@ -891,7 +907,7 @@
     border: 1px solid white;
     .tabs-award{
         // border: 1px solid red;
-        width: 20%;
+        width: 25%;
         overflow: scroll;
         &::-webkit-scrollbar {
             width: 0; /* Adjust the width as needed */
@@ -902,13 +918,56 @@
     }
 }
 
-.tabs-main-item{
+.tabs-main-item {
+    margin-left: 5px;
+    margin-right: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
     height: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
     background-color: white;
+    position: relative; /* Add this for positioning the pseudo-element */
+}
+
+.tabs-main-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    border-radius: inherit; /* Inherit the border radius from the parent */
+}
+
+.tabs-main-item::after {
+    content: ""; /* This pseudo-element can be used for other purposes if needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Your background image */
+.tabs-main-item {
+    background-image: url('../img/award1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     
+
+    &:hover{
+        border: 1px solid white;
+    }
+}
+
+
+.tabs-content-award {
+    display: none; /* Add this line to hide the tab contents initially */
+}
+
+.tabs-content-award.active {
+    display: block;
 }

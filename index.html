@@ -640,7 +640,7 @@
               </ul>
             </div>
             <div class="main-container">
-              <div id="language" class="tab-content">
+              <div id="language" class="tab-content-skill">
                 <div class="itemSkillLoader">
                   <li><h3>PHP</h3>
                       <span class="bar"><span class="php"></span></span>
@@ -665,7 +665,7 @@
                   </li>
                 </div>
               </div>
-              <div id="tool" class="tab-content">
+              <div id="tool" class="tab-content-skill">
                 <div class="itemSkillLoader">
                   <li><h3>VsCode</h3>
                       <span class="bar"><span class="php"></span></span>
@@ -678,7 +678,7 @@
                   </li>
                 </div>
               </div>
-              <div id="skill" class="tab-content">
+              <div id="skill" class="tab-content-skill">
                 <div class="itemSkillLoader">
                   <li><h3>Communication</h3>
                       <span class="bar"><span class="php"></span></span>
@@ -697,7 +697,7 @@
                   </li>
                 </div>
               </div>
-              <div id="lang" class="tab-content">
+              <div id="lang" class="tab-content-skill">
                 <div class="itemSkillLoader">
                   <li><h3>Tagalog</h3>
                       <span class="bar"><span class="php"></span></span>
@@ -707,7 +707,7 @@
                   </li>
                 </div>
               </div>
-              <div id="other" class="tab-content">
+              <div id="other" class="tab-content-skill">
                 <div class="itemSkillLoader">
                   <li><h3>2D Graphic Designer</h3>
                       <span class="bar"><span class="php"></span></span>
@@ -733,28 +733,36 @@
   </div>
 
   <div id="myModal4" class="modal">
-    <div class="modal-content educationModal">
+    <div class="modal-content awardModal">
         <span id="closeModalBtn4" class="close">&times;</span>
         <div class="main-award-con">
           <div class="tabs-award">
-            <div class="tabs-main-item">
-              <p>Item 1</p>
+            <div class="tabs-main-item" data-tab="item1">
+                <p>Item 1</p>
             </div>
-            <div class="tabs-main-item">
-              <p>Item 2</p>
+            <div class="tabs-main-item" data-tab="item2">
+                <p>Item 2</p>
             </div>
-            <div class="tabs-main-item">
-              <p>Item 3</p>
+            <div class="tabs-main-item" data-tab="item3">
+                <p>Item 3</p>
             </div>
-            <div class="tabs-main-item">
-              <p>Item 4</p>
+            <div class="tabs-main-item" data-tab="item4">
+                <p>Item 4</p>
             </div>
-            <div class="tabs-main-item">
-              <p>Item 5</p>
+            <div class="tabs-main-item" data-tab="item5">
+                <p>Item 5</p>
             </div>
-          </div>
-          <div class="tabs-header"></div>
         </div>
+          <div class="tabs-header">
+            <!-- Tab Content -->
+            <div class="tabs-content-award active" data-content="item1">Content for Item 1</div>
+            <div class="tabs-content-award" data-content="item2">Content for Item 2</div>
+            <div class="tabs-content-award" data-content="item3">Content for Item 3</div>
+            <div class="tabs-content-award" data-content="item4">Content for Item 4</div>
+            <div class="tabs-content-award" data-content="item5">Content for Item 5</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -774,3 +782,4 @@
 <script src="./js/slider.js"></script>
 <script src="./js/view-image.js"></script>
 <script src="./js/tabs-skill.js"></script>
+<script src="./js/tab-award.js"></script>

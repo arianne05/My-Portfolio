@@ -1,7 +1,7 @@
 
   // Get all tabs and tab contents
   const tabs = document.querySelectorAll('.tab');
-  const tabContents = document.querySelectorAll('.tab-content');
+  const tabContents = document.querySelectorAll('.tab-content-skill');
 
   // Function to show a specific tab content by its data-tab attribute
   function showTab(tabId) {
