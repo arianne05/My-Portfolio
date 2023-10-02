@@ -1220,7 +1220,7 @@
     height: 100%;
 }
 
-.first-cert-sec{
+.first-cert-sec.active{
     display: flex;
     width: 100%;
     height: 65%;
@@ -1276,12 +1276,13 @@
     display: flex;
     justify-content: center;
     border: 1px solid rgb(207, 207, 207);
-    padding: 10px;
+    padding: auto;
     border-radius: 10px;
     background-color: #d1d1d1;  
     margin-right: 10px;
     img{
         width: 160px;
+        height: auto;
         cursor: pointer; 
     }
   }
@@ -1296,3 +1297,8 @@
         background-color: $body-section;
     }
   }
+
+  //Tabs for Cert
+.first-cert-sec {
+    display: none;
+}
