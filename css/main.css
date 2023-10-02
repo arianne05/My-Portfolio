@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inika&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
 nav {
   display: flex;
   justify-content: space-between;
@@ -151,31 +153,57 @@ nav .rightBar button:hover {
 .firstSection .right-first-section .img-container img {
   width: 500px;
 }
-.firstSection .right-first-section .img-caption {
+
+.img-caption {
   height: 15%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
+  color: #F3F3F3;
 }
-.firstSection .right-first-section .img-caption .one-big {
+.img-caption .one-big {
   font-size: 60px;
   font-family: "Lexend Exa", sans-serif;
-  color: #F3F3F3;
   margin-right: 10px;
   margin-left: 10px;
 }
-.firstSection .right-first-section .img-caption .overview-cap {
+.img-caption .overview-cap {
   text-align: right;
-  color: #D9D9D9;
 }
-.firstSection .right-first-section .img-caption .overview-cap .sub-header {
+.img-caption .overview-cap .sub-header {
   font-family: "Inter", sans-serif;
   letter-spacing: 5.5px;
   font-weight: 600;
-  color: #F3F3F3;
 }
-.firstSection .right-first-section .img-caption .overview-cap .caption-sub {
+.img-caption .overview-cap .caption-sub {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.275px;
+}
+
+.img-caption2 {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #1F232F;
+}
+.img-caption2 .one-big {
+  font-size: 60px;
+  font-family: "Lexend Exa", sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.img-caption2 .overview-cap {
+  text-align: left;
+}
+.img-caption2 .overview-cap .sub-header {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 5.5px;
+  font-weight: 600;
+}
+.img-caption2 .overview-cap .caption-sub {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   letter-spacing: 1.275px;
@@ -245,6 +273,1138 @@ nav .rightBar button:hover {
 /* Delay the start of the animation for the "Me" image */
 #meImage {
   animation-delay: 5s; /* Delay the start of the animation for 2 seconds */
+}
+
+.secondSection {
+  background-color: #A5E5FA;
+  position: relative;
+  height: 100vh;
+}
+
+.items-modal {
+  display: flex;
+  align-items: center;
+}
+.items-modal .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1F232F;
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+  margin-right: 10px;
+}
+.items-modal .description {
+  width: 230px;
+}
+.items-modal .description .item-title {
+  font-family: "Inter";
+  letter-spacing: 1.8px;
+  font-weight: 600;
+}
+.items-modal .description .item-title hr {
+  width: 150px;
+  border: none;
+  height: 2px;
+  background-color: #1F232F;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.items-modal .description label {
+  text-align: justify;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.items-modal .description a {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #1F232F;
+}
+
+.second-section-container {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.circle-container {
+  width: 430px;
+  height: 430px;
+  border: 5px solid #1F232F;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circling-green {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #1F232F;
+  position: absolute;
+  animation-duration: 10s; /* Slower animation, changed to 8 seconds */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.green1, .green2, .green3, .green4, .green5 {
+  animation-name: circle; /* All circling-green elements use the same animation */
+}
+
+.green1 {
+  animation-delay: 0s; /* No delay for the first element */
+}
+
+.green2 {
+  animation-delay: 2s; /* 1-second delay for the second element */
+}
+
+.green3 {
+  animation-delay: 4s; /* 2-second delay for the third element */
+}
+
+.green4 {
+  animation-delay: 6s; /* 3-second delay for the fourth element */
+}
+
+.green5 {
+  animation-delay: 8s; /* 4-second delay for the fifth element */
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-225px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-225px) rotate(-360deg);
+  }
+}
+/* Modal container */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  overflow: auto; /* Enable scroll if needed */
+  transition: all 300ms ease-in-out;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 15% auto; /* 15% from the top and centered horizontally */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be adjusted to desired width */
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+.profileModal {
+  border-radius: 50px 200px 50px 50px;
+  border: 2px solid #cecece;
+  background: rgba(49, 49, 49, 0.7);
+  box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.25);
+  width: 85%;
+  height: 90%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  color: #F3F3F3;
+}
+.profileModal .main-prof-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+.profileModal .main-prof-container .content-prof1 {
+  display: flex;
+  align-items: center;
+}
+.profileModal .main-prof-container .content-prof1 .AQCircle {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 26px;
+  color: #1F232F;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(140deg, #A3F9FF 12.94%, #E8C3FF 95.44%);
+  border-radius: 50%;
+}
+.profileModal .main-prof-container .content-prof1 .fullname {
+  text-align: left;
+}
+.profileModal .main-prof-container .content-prof1 .fullname p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.7px;
+}
+.profileModal .main-prof-container .content-prof1 .fullname label {
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.275px;
+}
+.profileModal .main-prof-container .content-prof2 {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+.profileModal .main-prof-container .content-prof2 .first-border-prof {
+  height: 50%;
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #AFF1FF;
+}
+.profileModal .main-prof-container .content-prof2 .first-border-prof .personal-info-item {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.profileModal .main-prof-container .content-prof2 .first-border-prof .personal-info-item p {
+  margin-right: 100px;
+  margin-bottom: 10px;
+  color: #F3F3F3;
+}
+.profileModal .main-prof-container .content-prof2 .first-border-prof .personal-info-item label {
+  color: #D9D9D9;
+  text-align: left;
+  margin-left: 50px;
+}
+.profileModal .main-prof-container .content-prof2 .header-sec-prof {
+  display: flex;
+  justify-content: start;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.profileModal .main-prof-container .content-prof2 .second-border-prof {
+  border: 2px solid #AFF1FF;
+  width: 93%;
+  height: 35%;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 20px;
+}
+.profileModal .main-prof-container .content-prof2 .second-border-prof .container-item {
+  cursor: pointer;
+  display: flex;
+  border: 1px solid #858585;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.profileModal .main-prof-container .content-prof2 .second-border-prof .container-item i {
+  margin-right: 10px;
+}
+.profileModal .main-prof-container .content-prof2 .second-border-prof .container-item:hover {
+  background-color: rgb(187, 132, 212);
+}
+.profileModal img {
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  width: 500px;
+  height: 500px;
+}
+
+.educationModal {
+  border-radius: 50px 200px 50px 50px;
+  border: 2px solid #cecece;
+  background: rgba(49, 49, 49, 0.7);
+  box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.25);
+  width: 85%;
+  height: 80%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  color: #F3F3F3;
+}
+
+.tab-content {
+  width: 100%;
+  height: 90%;
+}
+
+.tab1-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.tab1-main .tab1-left {
+  margin-top: 3%;
+  width: 60%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.tab1-main .tab1-left .slider {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 2s ease; /* Animation duration and easing */
+}
+.tab1-main .tab1-left .slider img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: none;
+}
+.tab1-main .tab2-right {
+  width: 100%;
+  height: 100%;
+}
+.tab1-main .tab2-right .tab2-text {
+  margin-left: 40px;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+.tab1-main .tab2-right .inika-font {
+  font-family: "Inika";
+}
+.tab1-main .tab2-right .lexend-font {
+  color: #F3F3F3;
+  font-family: "Lexend Exa", sans-serif;
+  font-size: 64px;
+  margin-bottom: 5px;
+}
+.tab1-main .tab2-right .smallerSize {
+  font-size: 50px;
+}
+.tab1-main .tab2-right .inter-font {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.5px;
+  margin-bottom: 5px;
+}
+.tab1-main .tab2-right .tab2-card-images {
+  font-family: "Lexend Exa", sans-serif;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+.tab1-main .tab2-right .tab2-card-images .text-card-img {
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.tab1-main .tab2-right .tab2-card-images .text-card-img .one-text {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+.tab1-main .tab2-right .tab2-card-images .card img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+.tab1-main .tab2-right .tab2-card-images .onebigcard img {
+  width: 200px;
+  height: 220px;
+  border-radius: 20px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+.tabs {
+  text-align: left;
+  display: flex;
+}
+
+.tab-button {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.tab-content {
+  display: none;
+  /* ... other tab content styles ... */
+}
+
+/* Style the active tab button */
+.tab-button.active {
+  background-color: #ccc;
+}
+
+/* Display the active tab content */
+.tab-content.active {
+  display: block;
+}
+
+/* Styles for the slider container */
+.tab1-left {
+  position: relative;
+}
+
+/* Style for the overlay */
+.overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the overlay content */
+.overlay-content {
+  text-align: center;
+  color: white;
+}
+
+/* Style for the logo */
+.overlay-content img {
+  max-width: 100px; /* Adjust the size as needed */
+}
+
+/* Show the overlay on hover */
+.tab1-left:hover .overlay {
+  display: flex;
+}
+
+.by-paragh {
+  font-family: "Inter";
+  padding: 15px;
+  text-align: justify;
+}
+.by-paragh p {
+  font-size: 12px;
+}
+
+.button-con {
+  display: flex;
+  justify-content: end;
+}
+.button-con button {
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #A3F9FF 4.78%, #E8C3FF 100%);
+}
+.button-con button:hover {
+  box-shadow: 0px 0px 20px 10px rgba(143, 227, 241, 0.25);
+}
+
+/* Styles for the modal */
+.modalImage {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.modal-content-image {
+  max-width: 60%;
+  max-height: 60%;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-skill-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left-con {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.left-con .img-con-skill {
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-con .img-con-skill img {
+  width: 60%;
+  z-index: 2; /* Set the z-index to a value greater than the circles */
+  display: block;
+}
+
+.skill-circle {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-skills {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 157px;
+  height: 171px;
+  position: absolute;
+  animation-duration: 10s; /* Slower animation, changed to 8 seconds */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.circle-skills img.logoPL {
+  width: 50%; /* Adjust the width as needed */
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-skills img.java {
+  width: 30%;
+  height: auto;
+}
+
+.skill1, .skill2, .skill3, .skill4, .skill5 {
+  animation-name: circleskill; /* All circling-green elements use the same animation */
+}
+
+.skill1 {
+  animation-delay: 0s; /* No delay for the first element */
+}
+
+.skill2 {
+  animation-delay: 2s; /* 1-second delay for the second element */
+}
+
+.skill3 {
+  animation-delay: 4s; /* 2-second delay for the third element */
+}
+
+.skill4 {
+  animation-delay: 6s; /* 3-second delay for the fourth element */
+}
+
+.skill5 {
+  animation-delay: 8s; /* 4-second delay for the fifth element */
+}
+
+@keyframes circleskill {
+  0% {
+    transform: rotate(0deg) translate(-150px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-150px) rotate(-360deg);
+  }
+}
+.top-skill {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lexend Exa";
+}
+.top-skill .item-PL {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.top-skill .item-text {
+  text-align: left;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.top-skill .itemImgCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #A3F9FF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.top-skill .itemImgCon img {
+  width: 40px;
+}
+.top-skill .itemImgCon .pythonItem {
+  width: 30px;
+}
+.top-skill .itemImgCon .javaItem {
+  width: 20px;
+}
+.top-skill .redItem {
+  background-color: #E66D6D;
+}
+.top-skill .blueItem {
+  background-color: #8DB7E8;
+}
+.top-skill .greenItem {
+  background-color: #A0EFA8;
+}
+
+.right-con {
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+.right-con .nav-skill {
+  width: 30%;
+  height: 80%;
+  text-align: left;
+  margin-top: 10%;
+  font-size: 15px;
+  padding: 20px;
+}
+.right-con .nav-skill ul, .right-con .nav-skill li {
+  cursor: pointer;
+  list-style: none;
+}
+.right-con .nav-skill li {
+  padding: 10px;
+}
+.right-con .nav-skill li:hover {
+  background-color: #8DB7E8;
+  border-radius: 10px;
+}
+.right-con .nav-skill li.active {
+  background-color: #8DB7E8;
+  border-radius: 10px;
+}
+.right-con .main-container {
+  width: 60%;
+  height: 80%;
+  margin-right: 10%;
+  margin-top: 10%;
+  border-radius: 20px;
+  border: 0.4px solid #DCDCDC;
+  background: rgba(217, 217, 217, 0.1);
+  padding: 20px;
+}
+.right-con .main-container .itemSkillLoader {
+  width: 100%;
+  text-align: left;
+}
+.right-con .main-container .itemSkillLoader li {
+  margin: 20px 0;
+  padding: 10px;
+  list-style: none;
+}
+.right-con .main-container .itemSkillLoader .bar {
+  background: #353b48;
+  display: block;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.right-con .main-container .itemSkillLoader .bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.right-con .main-container .itemSkillLoader .bar span {
+  height: 10px;
+  float: left;
+  background: linear-gradient(90deg, #9AD7F9 0%, #E9A5F5 54.91%);
+}
+
+/* Initially hide all tab contents except the first one */
+.tab-content {
+  display: none;
+}
+
+/* Show the first tab content */
+#language {
+  display: block;
+}
+
+.php {
+  width: 90%;
+  animation: php 3s;
+}
+
+.python {
+  width: 70%;
+  animation: python 3s;
+}
+
+.java {
+  width: 50%;
+  animation: java 3s;
+}
+
+.javascript {
+  width: 50%;
+  animation: javascript 3s;
+}
+
+.cplus {
+  width: 30%;
+  animation: cplus 3s;
+}
+
+.sql {
+  width: 80%;
+  animation: sql 3s;
+}
+
+.git {
+  width: 50%;
+  animation: git 3s;
+}
+
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes cplus {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.awardModal {
+  border-radius: 50px 200px 50px 50px;
+  border: 2px solid #cecece;
+  background: transparent;
+  box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.25);
+  width: 85%;
+  height: 80%;
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  color: #F3F3F3;
+  position: relative;
+  overflow: hidden;
+  transition: opacity 100ms ease-in-out 200ms;
+}
+
+.main-award-con {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.main-award-con .tabs-award {
+  width: 25%;
+  overflow: scroll;
+}
+.main-award-con .tabs-award::-webkit-scrollbar {
+  width: 0; /* Adjust the width as needed */
+}
+.main-award-con .tabs-award::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb */
+}
+.main-award-con .tabs-header {
+  width: 75%;
+}
+
+.tabs-main-item {
+  z-index: 10;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  width: 80%;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px 50px 20px 20px;
+  position: relative; /* Add this for positioning the pseudo-element */
+}
+
+.tabs-main-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  border-radius: inherit; /* Inherit the border radius from the parent */
+}
+
+.tabs-main-item::after {
+  content: ""; /* This pseudo-element can be used for other purposes if needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Your background image */
+.award1 {
+  background-image: url("../img/award1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px 50px 20px 20px;
+}
+.award1:hover {
+  border: 1px solid white;
+}
+
+.award2 {
+  background-image: url("../img/award2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px 50px 20px 20px;
+}
+.award2:hover {
+  border: 1px solid white;
+}
+
+.award3 {
+  background-image: url("../img/award3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px 50px 20px 20px;
+}
+.award3:hover {
+  border: 1px solid white;
+}
+
+.award4 {
+  background-image: url("../img/award4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px 50px 20px 20px;
+}
+.award4:hover {
+  border: 1px solid white;
+}
+
+.tabs-content-award {
+  display: none; /* Add this line to hide the tab contents initially */
+}
+
+.tabs-content-award.active {
+  display: block;
+}
+
+.main-img-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto 0;
+  border-radius: 50px 200px 50px 50px;
+}
+
+.main-img-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(26, 85, 238, 0.8) 12.51%, rgba(0, 0, 0, 0) 98.62%);
+  z-index: -1; /* Place the overlay above the image */
+  border-radius: inherit; /* Inherit the border-radius from the parent */
+}
+
+.imgGreen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(12, 134, 22, 0.8) 12.51%, rgba(0, 0, 0, 0) 98.62%);
+  z-index: -1; /* Place the overlay above the image */
+  border-radius: inherit; /* Inherit the border-radius from the parent */
+}
+
+.main-img-content img {
+  width: 100%;
+  border-radius: inherit; /* Inherit the border-radius from the parent */
+  position: relative; /* Keep the current position */
+  z-index: -2; /* Ensure the image is below the overlay */
+}
+
+.main-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-top: 160px;
+}
+.main-text-content h1 {
+  font-family: "Lexend Exa", sans-serif;
+  font-weight: 10;
+  font-size: 60px;
+}
+.main-text-content h2 {
+  font-family: "Lexend Exa", sans-serif;
+  font-weight: 10;
+  font-size: 40px;
+}
+.main-text-content h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.main-text-content p {
+  font-family: "Inika", sans-serif;
+  font-weight: 500;
+}
+
+.award_logo {
+  width: 180px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.activeItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 81, 180, 0.5); /* Adjust the opacity as needed */
+  border: 1px solid white;
+  border-radius: inherit; /* Inherit the border radius from the parent */
+}
+
+/* Initial styles for modal */
+/* Modal content when it's visible */
+.popup {
+  position: fixed;
+  top: -100vh;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.popup .overlay2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 100ms ease-in-out 200ms;
+}
+
+.popup .popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.15);
+  width: 80%;
+  height: 70%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  opacity: 0;
+  border: 1px solid #B9B9B9;
+  background: #F0F0F0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: all 300ms ease-in-out;
+}
+
+.popup .popup-content h2 {
+  margin: 10px 0px;
+  font-size: 25px;
+  color: #111;
+  text-align: center;
+}
+
+.popup .popup-content p {
+  margin: 15px 0px;
+  color: #222;
+  font-size: 16px;
+  text-align: center;
+}
+
+.popup .popup-content .controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 0px;
+}
+
+.popup .popup-content .controls button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.popup .popup-content .controls .close-btn {
+  background: transparent;
+  color: #3284ed;
+}
+
+.popup .popup-content .controls .submit-btn {
+  background: 3284ed;
+  color: #fff;
+}
+
+.popup.active {
+  top: 0px;
+  transition: top 0ms ease-in-out 0ms;
+}
+
+.popup.active .overlay2 {
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.popup.active .popup-content {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 
 * {
