@@ -142,6 +142,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     overflow: auto; /* Enable scroll if needed */
+    transition: all 300ms ease-in-out;
 }
 
 /* Modal content */
@@ -152,6 +153,7 @@
     border: 1px solid #888;
     width: 50%; /* Could be adjusted to desired width */
     text-align: center;
+    transition: all 300ms ease-in-out;
 }
 
 .profileModal{ //Personal Info
@@ -901,6 +903,7 @@
     color: $primary-white-text;
     position: relative;
     overflow: hidden;
+    transition: opacity 100ms ease-in-out 200ms;
 }
 
 .main-award-con{
