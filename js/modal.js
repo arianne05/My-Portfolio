@@ -56,19 +56,19 @@ closeModalBtn4.onclick = function() {
 }
 
 
-var modal5 = document.getElementById("myModal5");
-var openModalBtn5 = document.getElementById("openModalBtn5");
-var closeModalBtn5 = document.getElementById("closeModalBtn5");
+// var modal5 = document.getElementById("myModal5");
+// var openModalBtn5 = document.getElementById("openModalBtn5");
+// var closeModalBtn5 = document.getElementById("closeModalBtn5");
 
-// Open Modal 5 when the "Open Modal 5" button is clicked
-openModalBtn5.onclick = function() {
-    modal5.style.display = "block";
-}
+// // Open Modal 5 when the "Open Modal 5" button is clicked
+// openModalBtn5.onclick = function() {
+//     modal5.style.display = "block";
+// }
 
-// Close Modal 5 when the "Close" button (×) is clicked
-closeModalBtn5.onclick = function() {
-    modal5.style.display = "none";
-}
+// // Close Modal 5 when the "Close" button (×) is clicked
+// closeModalBtn5.onclick = function() {
+//     modal5.style.display = "none";
+// }
 
 // Close Modals if the user clicks anywhere outside of them
 window.onclick = function(event) {
@@ -84,7 +84,7 @@ window.onclick = function(event) {
     if (event.target == modal4) {
         modal4.style.display = "none";
     }
-    if (event.target == modal5) {
-        modal5.style.display = "none";
-    }
+    // if (event.target == modal5) {
+    //     modal5.style.display = "none";
+    // }
 }
