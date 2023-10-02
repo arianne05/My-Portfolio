@@ -1318,3 +1318,15 @@
         font-size: 45px;
     }
 }
+
+.item-cert {
+    /* Your existing styles for item-cert */
+
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.item-cert.active {
+    border: 10px solid $body-section-second;
+    color: white; /* Change the text color when selected */
+}

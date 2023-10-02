@@ -1500,6 +1500,17 @@ nav .rightBar button:hover {
   font-size: 45px;
 }
 
+.item-cert {
+  /* Your existing styles for item-cert */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.item-cert.active {
+  border: 10px solid #A5E5FA;
+  color: white; /* Change the text color when selected */
+}
+
 * {
   margin: 0;
   padding: 0;
