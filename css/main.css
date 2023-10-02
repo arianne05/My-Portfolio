@@ -1408,7 +1408,6 @@ nav .rightBar button:hover {
 }
 
 .main-con-cert {
-  border: 1px solid black;
   width: 100%;
   height: 100%;
 }
@@ -1416,13 +1415,14 @@ nav .rightBar button:hover {
 .first-cert-sec {
   display: flex;
   width: 100%;
-  height: 75%;
+  height: 65%;
 }
 .first-cert-sec .left-cert {
   display: flex;
   justify-content: center;
   width: 50%;
-  height: 100%;
+  height: 90%;
+  margin-top: 2%;
 }
 .first-cert-sec .left-cert img {
   width: 100%;
@@ -1433,7 +1433,7 @@ nav .rightBar button:hover {
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  height: 100%;
+  height: 90%;
   margin-left: 20px;
 }
 .first-cert-sec .right-cert h3 {
@@ -1445,21 +1445,42 @@ nav .rightBar button:hover {
 }
 
 .scroll-container {
+  height: 35%;
   width: 100%;
+  display: flex;
+  align-items: center;
   overflow-x: auto;
   white-space: nowrap; /* Prevent line breaks between images */
 }
 
 .second-cert-sec {
-  display: inline-block; /* Display images in a row */
-  border: 1px solid black;
-  height: 25%;
+  display: flex;
 }
 
-.second-cert-sec img {
-  width: 180px;
+.item-cert {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #d1d1d1;
+  margin-right: 10px;
+}
+.item-cert img {
+  width: 160px;
   cursor: pointer;
-  margin-right: 10px; /* Add spacing between images */
+}
+
+.three-dotted {
+  display: flex;
+}
+.three-dotted .green-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  margin-right: 5px;
+  background-color: #1F232F;
 }
 
 * {

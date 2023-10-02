@@ -1215,7 +1215,7 @@
 // -------------------
 .main-con-cert{
     // display: flex;
-    border: 1px solid black;
+    // border: 1px solid black;
     width: 100%;
     height: 100%;
 }
@@ -1223,14 +1223,15 @@
 .first-cert-sec{
     display: flex;
     width: 100%;
-    height: 75%;
+    height: 65%;
 
     .left-cert{
         display: flex;
         justify-content: center;
         // border: 1px solid red;
         width: 50%;
-        height: 100%;
+        height: 90%;
+        margin-top: 2%;
         img{
             width: 100%;
             height: auto;
@@ -1243,7 +1244,7 @@
         justify-content: center;
         // border: 1px solid red;
         width: 50%;
-        height: 100%;
+        height: 90%;
         margin-left: 20px;
         h3{
             font-family: 'Lexend Exa', sans-serif;
@@ -1256,20 +1257,42 @@
 }
 
 .scroll-container {
+    // border: 1px solid red;
+    height: 35%;
     width: 100%;
+    display: flex;
+    align-items: center;
     overflow-x: auto;
     white-space: nowrap; /* Prevent line breaks between images */
   }
   
   .second-cert-sec {
-    display: inline-block; /* Display images in a row */
-    border: 1px solid black;
-    height: 25%;
+    display: flex;
   }
   
-  .second-cert-sec img {
-    width: 180px;
-    cursor: pointer;
-    margin-right: 10px; /* Add spacing between images */
-  }
   
+  .item-cert{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #d1d1d1;  
+    margin-right: 10px;
+    img{
+        width: 160px;
+        cursor: pointer; 
+    }
+  }
+
+  .three-dotted{
+    display: flex;
+    .green-circle{
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+        margin-right: 5px;
+        background-color: $body-section;
+    }
+  }
