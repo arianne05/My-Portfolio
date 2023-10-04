@@ -1544,35 +1544,94 @@ nav .rightBar button:hover {
   font-family: "Inter";
   color: #D9D9D9;
 }
-.third-sec-main .left-sec-third .scrollable {
-  height: 250px;
+.third-sec-main .left-sec-third .slide-container {
+  max-width: 650px;
+  width: 100%;
+  background-color: gray;
+  padding: 0 40px 0;
+}
+.third-sec-main .left-sec-third .slide-content {
+  margin: 0 40px;
+}
+.third-sec-main .left-sec-third .card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.third-sec-main .left-sec-third .image-content,
+.third-sec-main .left-sec-third .card-content {
   display: flex;
-}
-.third-sec-main .left-sec-third .scrollable button {
-  cursor: pointer;
-  border-radius: 20px;
-  border: 1px solid #585858;
-  background: rgba(217, 217, 217, 0.3);
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.third-sec-main .left-sec-third .scrollable button i {
-  color: #D9D9D9;
-}
-.third-sec-main .left-sec-third .scrollable .images-scrollable {
-  width: 90%;
-  height: 90%;
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  padding: 10px 14px;
 }
-.third-sec-main .left-sec-third .scrollable .images-scrollable .per-item-scroll {
-  margin: 10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  border: 1px solid #585858;
-  background: rgba(217, 217, 217, 0.1);
+.third-sec-main .left-sec-third .image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.third-sec-main .left-sec-third .overlay-slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 25px;
+}
+.third-sec-main .left-sec-third .overlay-slide::before,
+.third-sec-main .left-sec-third .overlay-slide::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070f4;
+}
+.third-sec-main .left-sec-third .overlay-slide::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.third-sec-main .left-sec-third .card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.third-sec-main .left-sec-third .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.third-sec-main .left-sec-third .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.third-sec-main .left-sec-third .description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.third-sec-main .left-sec-third .button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 14px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.third-sec-main .left-sec-third .button:hover {
+  background: #265df2;
 }
 .third-sec-main .right-sec-third {
   width: 50%;
