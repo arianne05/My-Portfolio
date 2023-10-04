@@ -9,7 +9,7 @@
         padding: 30px;
         width: 70%;
         height: 100%;
-        border: 1px solid white;
+        // border: 1px solid white;
         .text-sec{
             padding: 30px;
             height: 50%;
@@ -68,7 +68,7 @@
     .right-sec-third{
         width: 50%;
         height: 100vh;
-        border: 1px solid red;
+        // border: 1px solid red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -78,6 +78,52 @@
             height: 90%;
             border-radius: 10px;
             background-color: #fff;
+        }
+
+        .text-header-img{
+            // border: 1px solid black;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .text{
+                width: 70%;
+            }
+            button{
+                cursor: pointer;
+                border: none;
+                background-color: #585858;
+                padding: 10px;
+                border-radius: 100px;
+            }
+        }
+
+        .header-img{
+            border: 1px solid rgb(192, 192, 192);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+
+        .all-img-preview{
+            display: flex;
+            flex-wrap: wrap;
+            
+            img{
+                cursor: pointer;
+                width: 45%;
+                height: auto;
+                margin: 5px;
+                border-radius: 5px;
+                border: 1px solid rgb(192, 192, 192);
+                &:hover{
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                }
+            }
         }
     }
 }
