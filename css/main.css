@@ -32,6 +32,13 @@ nav .leftBar li a {
 nav .leftBar li a:hover {
   color: #F3F3F3;
 }
+nav .rightBar a {
+  text-decoration: none;
+  color: #4c6466;
+}
+nav .rightBar a:hover {
+  color: #82CAFF;
+}
 nav .rightBar button {
   background-color: transparent;
   padding: 0;
@@ -1596,6 +1603,14 @@ nav .rightBar button:hover {
   background-color: #585858;
   padding: 10px;
   border-radius: 100px;
+}
+.third-sec-main .right-sec-third .text-header-img h3 {
+  font-family: "Lato";
+  font-size: 16px;
+}
+.third-sec-main .right-sec-third .text-header-img label {
+  font-family: "Inter";
+  font-size: 12px;
 }
 .third-sec-main .right-sec-third .header-img {
   border: 1px solid rgb(192, 192, 192);
