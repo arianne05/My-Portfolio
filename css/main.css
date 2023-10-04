@@ -1526,7 +1526,6 @@ nav .rightBar button:hover {
 .third-sec-main .left-sec-third {
   padding: 30px;
   width: 60%;
-  border: 1px solid white;
 }
 .third-sec-main .left-sec-third .text-sec {
   padding: 30px;
@@ -1546,7 +1545,6 @@ nav .rightBar button:hover {
 }
 .third-sec-main .left-sec-third .slide-container {
   width: 100%;
-  background-color: gray;
   padding: 0;
   margin: 0;
 }
@@ -1557,10 +1555,11 @@ nav .rightBar button:hover {
   border-radius: 25px;
 }
 .third-sec-main .left-sec-third .card {
-  border: 1px solid red;
   width: 100%;
-  border-radius: 25px;
-  background-color: #fff;
+}
+.third-sec-main .left-sec-third .card img {
+  width: 100%;
+  height: auto;
 }
 .third-sec-main .left-sec-third .image-content,
 .third-sec-main .left-sec-third .card-content {
@@ -1571,31 +1570,6 @@ nav .rightBar button:hover {
 }
 .third-sec-main .left-sec-third .image-content {
   position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-.third-sec-main .left-sec-third .overlay-slide {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4070f4;
-  border-radius: 25px 25px 0 25px;
-}
-.third-sec-main .left-sec-third .overlay-slide::before,
-.third-sec-main .left-sec-third .overlay-slide::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #4070f4;
-}
-.third-sec-main .left-sec-third .overlay-slide::after {
-  border-radius: 0 25px 0 0;
-  background-color: #fff;
 }
 .third-sec-main .left-sec-third .card-image {
   position: relative;
