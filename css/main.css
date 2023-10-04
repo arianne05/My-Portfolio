@@ -1662,6 +1662,7 @@ nav .rightBar button:hover {
 .third-sec-main .right-sec-third .all-img-preview {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .third-sec-main .right-sec-third .all-img-preview img {
   cursor: pointer;
@@ -1673,6 +1674,60 @@ nav .rightBar button:hover {
 }
 .third-sec-main .right-sec-third .all-img-preview img:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con {
+  margin-bottom: 20px;
+  width: 45%;
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con img {
+  margin: 0;
+  width: 100%;
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con .img-container-prev {
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con .over-text-lay {
+  border-radius: 10px;
+  position: absolute; /* Position the overlay text absolutely within .img-prev-con */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+  color: #ffffff; /* Text color */
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con:hover .over-text-lay {
+  opacity: 1;
+  color: #ffffff;
+  /* Add any additional styling for the overlay text on hover here */
+}
+.third-sec-main .right-sec-third .all-img-preview .text-prev {
+  display: flex;
+  justify-content: space-between;
+}
+.third-sec-main .right-sec-third .all-img-preview .circle-with-text {
+  display: flex;
+}
+.third-sec-main .right-sec-third .all-img-preview .circle-with-text .circle {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: green;
+}
+.third-sec-main .right-sec-third .all-img-preview .over-text-lay {
+  display: none;
+}
+.third-sec-main .right-sec-third .all-img-preview .over-text-lay:hover {
+  color: red;
 }
 
 * {
