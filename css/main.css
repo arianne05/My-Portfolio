@@ -1525,12 +1525,12 @@ nav .rightBar button:hover {
 }
 .third-sec-main .left-sec-third {
   padding: 30px;
-  width: 70%;
-  height: 100%;
+  width: 60%;
+  border: 1px solid white;
 }
 .third-sec-main .left-sec-third .text-sec {
   padding: 30px;
-  height: 50%;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1545,17 +1545,20 @@ nav .rightBar button:hover {
   color: #D9D9D9;
 }
 .third-sec-main .left-sec-third .slide-container {
-  max-width: 650px;
   width: 100%;
-  padding: 0 40px 0;
+  background-color: gray;
+  padding: 0;
+  margin: 0;
 }
 .third-sec-main .left-sec-third .slide-content {
   margin: 0 40px;
+  padding: 45px 20px;
   overflow: hidden;
   border-radius: 25px;
 }
 .third-sec-main .left-sec-third .card {
-  width: 320px;
+  border: 1px solid red;
+  width: 100%;
   border-radius: 25px;
   background-color: #fff;
 }
@@ -1596,8 +1599,8 @@ nav .rightBar button:hover {
 }
 .third-sec-main .left-sec-third .card-image {
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   background: #fff;
   padding: 3px;
@@ -1635,7 +1638,7 @@ nav .rightBar button:hover {
   background: #265df2;
 }
 .third-sec-main .right-sec-third {
-  width: 50%;
+  width: 40%;
   height: 100vh;
   display: flex;
   justify-content: center;
