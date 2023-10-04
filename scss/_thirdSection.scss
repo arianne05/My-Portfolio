@@ -33,11 +33,15 @@
         .slide-container{
             max-width: 650px;
             width: 100%;
-            background-color: gray;
+            // background-color: gray;
             padding: 0 40px 0;
         }
         .slide-content{
             margin : 0 40px;
+            // padding: 45px 20px;
+            // background-color: red;
+            overflow: hidden;
+            border-radius: 25px;
         }
 
         .card{
