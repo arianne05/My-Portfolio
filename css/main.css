@@ -32,6 +32,13 @@ nav .leftBar li a {
 nav .leftBar li a:hover {
   color: #F3F3F3;
 }
+nav .rightBar a {
+  text-decoration: none;
+  color: #4c6466;
+}
+nav .rightBar a:hover {
+  color: #82CAFF;
+}
 nav .rightBar button {
   background-color: transparent;
   padding: 0;
@@ -1509,6 +1516,163 @@ nav .rightBar button:hover {
 .item-cert.active {
   border: 10px solid #A5E5FA;
   color: white; /* Change the text color when selected */
+}
+
+.third-sec-main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.third-sec-main .left-sec-third {
+  padding: 30px;
+  width: 60%;
+}
+.third-sec-main .left-sec-third .text-sec {
+  padding: 30px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.third-sec-main .left-sec-third .text-sec h3 {
+  color: #F3F3F3;
+  font-size: 60px;
+  font-family: "Lexend Exa", sans-serif;
+}
+.third-sec-main .left-sec-third .text-sec p {
+  font-family: "Inter";
+  color: #D9D9D9;
+}
+.third-sec-main .left-sec-third .slide-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.third-sec-main .left-sec-third .slide-content {
+  margin: 0 40px;
+  padding: 45px 20px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.third-sec-main .left-sec-third .card {
+  width: 100%;
+}
+.third-sec-main .left-sec-third .card img {
+  width: 100%;
+  height: auto;
+}
+.third-sec-main .left-sec-third .image-content,
+.third-sec-main .left-sec-third .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.third-sec-main .left-sec-third .image-content {
+  position: relative;
+}
+.third-sec-main .left-sec-third .card-image {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.third-sec-main .left-sec-third .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.third-sec-main .left-sec-third .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.third-sec-main .left-sec-third .description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.third-sec-main .left-sec-third .button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 14px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.third-sec-main .left-sec-third .button:hover {
+  background: #265df2;
+}
+.third-sec-main .right-sec-third {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third-sec-main .right-sec-third .img-container-proj {
+  padding: 20px;
+  width: 80%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.third-sec-main .right-sec-third .text-header-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.third-sec-main .right-sec-third .text-header-img .text {
+  width: 70%;
+}
+.third-sec-main .right-sec-third .text-header-img button {
+  cursor: pointer;
+  border: none;
+  background-color: #585858;
+  padding: 10px;
+  border-radius: 100px;
+}
+.third-sec-main .right-sec-third .text-header-img h3 {
+  font-family: "Lato";
+  font-size: 16px;
+}
+.third-sec-main .right-sec-third .text-header-img label {
+  font-family: "Inter";
+  font-size: 12px;
+}
+.third-sec-main .right-sec-third .header-img {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.third-sec-main .right-sec-third .header-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.third-sec-main .right-sec-third .all-img-preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+.third-sec-main .right-sec-third .all-img-preview img {
+  cursor: pointer;
+  width: 45%;
+  height: auto;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 192, 192);
+}
+.third-sec-main .right-sec-third .all-img-preview img:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 * {

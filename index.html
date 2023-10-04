@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/8b614ed6c5.js" crossorigin="anonymous"></script>
-
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
     <title>Arianne Quimpo</title>
 </head>
 <body>
@@ -17,7 +20,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <ul class="rightBar">
-            <li><button>Visit</button></li>
+            <li><a href="./cv/Arianne Quimpo Resume.pdf" download="Arianne Quimpo Resume.pdf"><button>Download CV</button></a></li>
         </ul>
     </nav>
     
@@ -91,6 +94,7 @@
         </defs>
     </svg>
     
+    <!-- SECTION 1 -->
     <section class="firstSection">
         <div class="left-first-section">
             <!-- Links -->
@@ -135,6 +139,7 @@
         </div>
     </section>
 
+    <!-- SECTION 2 -->
     <section class="secondSection">
           <!-- Wave border -->
           <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 192" fill="none">
@@ -174,27 +179,6 @@
           </div>
 
           <div class="second-section-container">
-            <!-- <div class="items-modal">
-              <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 63 63" fill="none">
-                  <path d="M31.4999 28.875C33.5766 28.875 35.6067 28.2592 37.3334 27.1054C39.0601 25.9517 40.406 24.3118 41.2007 22.3932C41.9954 20.4746 42.2033 18.3634 41.7982 16.3266C41.393 14.2898 40.393 12.4188 38.9246 10.9504C37.4561 9.48193 35.5852 8.4819 33.5484 8.07676C31.5116 7.67161 29.4004 7.87955 27.4818 8.67427C25.5631 9.46899 23.9233 10.8148 22.7695 12.5415C21.6158 14.2682 20.9999 16.2983 20.9999 18.375C20.9999 21.1598 22.1062 23.8305 24.0753 25.7996C26.0444 27.7688 28.7152 28.875 31.4999 28.875ZM31.4999 13.125C32.5383 13.125 33.5533 13.4329 34.4167 14.0098C35.28 14.5867 35.9529 15.4066 36.3503 16.3659C36.7477 17.3252 36.8516 18.3808 36.6491 19.3992C36.4465 20.4176 35.9465 21.3531 35.2122 22.0873C34.478 22.8215 33.5426 23.3216 32.5242 23.5241C31.5058 23.7267 30.4502 23.6227 29.4909 23.2254C28.5315 22.828 27.7116 22.1551 27.1347 21.2917C26.5578 20.4284 26.2499 19.4134 26.2499 18.375C26.2499 16.9826 26.8031 15.6473 27.7876 14.6627C28.7722 13.6781 30.1076 13.125 31.4999 13.125Z" fill="white"/>
-                  <path d="M31.5 34.1249C26.6266 34.1249 21.9529 36.0609 18.5069 39.5069C15.0609 42.9528 13.125 47.6266 13.125 52.4999C13.125 53.1961 13.4016 53.8638 13.8938 54.3561C14.3861 54.8484 15.0538 55.1249 15.75 55.1249C16.4462 55.1249 17.1139 54.8484 17.6062 54.3561C18.0984 53.8638 18.375 53.1961 18.375 52.4999C18.375 49.019 19.7578 45.6806 22.2192 43.2192C24.6806 40.7577 28.019 39.3749 31.5 39.3749C34.981 39.3749 38.3194 40.7577 40.7808 43.2192C43.2422 45.6806 44.625 49.019 44.625 52.4999C44.625 53.1961 44.9016 53.8638 45.3938 54.3561C45.8861 54.8484 46.5538 55.1249 47.25 55.1249C47.9462 55.1249 48.6139 54.8484 49.1062 54.3561C49.5984 53.8638 49.875 53.1961 49.875 52.4999C49.875 47.6266 47.9391 42.9528 44.4931 39.5069C41.0471 36.0609 36.3734 34.1249 31.5 34.1249Z" fill="white"/>
-                </svg>
-              </div>
-              <div class="description">
-                <div class="text-item">
-                  <div class="item-title">
-                    <p>PERSONAL</p>
-                    <hr>
-                  </div>
-                  <label>
-                    <p>Indicated here are the basic personal information of the developer.</p>
-                  </label>
-                </div>
-                <a href="#">View More</a>
-              </div>
-            </div> -->
-
             <div class="img-caption2">
               <div class="">
                 <p class="one-big">02</p>
@@ -206,11 +190,102 @@
                   Magna Cum Laude</p>
               </div>
             </div>
-            
         </div>
     </section>
 
-    <!-- Modal container -->
+    <!-- SECTION 3 -->
+    <div class="thirdSection">
+      <br>
+      <!-- Numbering Captions -->
+      <div class="img-caption">
+        <div class="overview-cap">
+          <p class="sub-header">Project Created</p>
+          <p class="caption-sub">School Projects Developed <br>
+            Web and Mobile UI Design <br>
+            Web Freelancing Project</p>
+        </div>
+        <div class="">
+          <p class="one-big">03</p>
+        </div>
+      </div>
+
+      <!-- Main Container -->
+      <div class="third-sec-main">
+
+        <div class="left-sec-third">
+          <div class="text-sec">
+            <h3>QR ATTENDANCE SYSTEM</h3><br>
+            <p>BS INFORMATION TECHNLOGY</p><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi expedita, quasi odio sed cupiditate earum aliquid eos facere iure!</p>
+          </div>
+
+          <div class="slide-container swiper">
+            <div class="slide-content"> 
+              <div class="card-wrapper swiper-wrapper">
+                
+                <div class="card swiper-slide">
+                  <img src="./img//projects/patient-rms/Dashboard.png" alt="">
+                </div>
+
+                <!-- Per Slide Item -->
+                <div class="card swiper-slide">
+                  <img src="./img//projects/patient-rms/Dashboard.png" alt="">
+                </div>
+
+               <!-- Per Slide Item -->
+               <div class="card swiper-slide">
+                <img src="./img//projects/patient-rms/Dashboard.png" alt="">
+              </div>
+
+
+                <!-- Per Slide Item -->
+                <div class="card swiper-slide">
+                  <img src="./img//projects/patient-rms/Dashboard.png" alt="">
+                </div>
+
+
+                <!-- Per Slide Item -->
+                <div class="card swiper-slide">
+                  <img src="./img//projects/patient-rms/Dashboard.png" alt="">
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+
+        <div class="right-sec-third">
+          <div class="img-container-proj">
+            <div class="header-img">
+              <img src="./img/projects/patient-rms/Dashboard.png" alt="">
+            </div>
+            
+            <div class="text-header-img">
+              <div class="text">
+                <br><h3>Patient Information System</h3>
+                <label>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, neque.</label>
+              </div>
+              
+              <button>View More</button>
+            </div>
+            <br><hr><br>
+            
+            <div class="all-img-preview">
+              <img src="./img/projects/patient-rms/Dashboard.png" alt="">
+              <img src="./img/projects/patient-rms/Dashboard.png" alt="">
+              <img src="./img/projects/patient-rms/Dashboard.png" alt="">
+              <img src="./img/projects/patient-rms/Dashboard.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Profile Modal -->
     <div id="myModal1" class="modal">
       <div class="modal-content profileModal">
@@ -304,435 +379,437 @@
       </div>
     </div>
   
-  <!-- Education Modal -->
-  <div id="myModal2" class="modal">
-    <div class="modal-content educationModal">
-        <span id="closeModalBtn2" class="close">&times;</span>
-      
-        <div id="tab1" class="tab-content">
-          <!-- Content for Tab 1 goes here -->
-          <div class="tab1-main">
-            <div class="tab1-left">
-              <div class="slider">
-                <img src="./img/cvsu1.jpg" alt="Image 1">
-                <img src="#" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                  <img src="./img/cvsu-logo.png" alt="Logo">
-                  <div class="content-text">
-                    <div class="by-paragh">
-                      <h3>Mission</h3>
-                      <p>Cavite State University shall provide excellent, equitable and relevant educational opportunities in the arts, sciences and technology through quality instruction and responsive research and development activities. It shall produce professional, skilled and morally upright individuals for global competitiveness.</p>
-                    </div>
-                    <div class="by-paragh">
-                      <h3>Vision</h3>
-                      <p>The premier university in historic Cavite globally recognized for excellence in character development, academics, research, innovation and sustainable community engagement.</p>
-                    </div>
-                    <div class="by-paragh">
-                      <h3>Quality Policy</h3>
-                      <p>We Commit to the highest standards of education, value our stakeholders, Strive for continual improvement of our products and services, and Uphold the University’s tenets of Truth, Excellence, and Service to produce globally competitive and morally upright individuals.</p>
-                    </div>
-                    <div class="button-con">
-                      <button onclick="window.location.href='https://cvsu.edu.ph/'">Visit Site</button>
-                    </div>
-                    
-                  </div>
-              </div>
-          </div>
-            </div>
-            <div class="tab2-right">
-              <div class="tab2-text">
-                <p class="inika-font">College</p>
-                <p class="lexend-font">Cavite State University</p>
-                <p class="inter-font">DON SEVERINO INDANG CAVITE</p>
-                <p class="inika-font">
-                  Bachelor of Science and Information Technology <br>
-                  Graduated with Latin Honor “Magna cum Laude” <br>
-                  Consistent Dean’s Lister 2019-2023 <br>
-                  Graduates of 2023
-                </p>
-              </div>
-              <div class="tab2-card-images">
-                <div class="text-card-img">
-                  <p class="one-text">01</p>
-                  <div class="card onebigcard">
-                    <img src="./img/cvsu2.jpg" alt="" onclick="showImageModal(this)">
-                  </div>
-                </div>
-                <div class="text-card-img">
-                  <p>02</p>
-                  <div class="card">
-                    <img src="./img/cvsu3.jpg" alt="" onclick="showImageModal(this)">
-                  </div>
-                </div>
-                <div class="text-card-img">
-                  <p>03</p>
-                  <div class="card">
-                    <img src="./img/cvsu4.jpg" alt="" onclick="showImageModal(this)">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- The modal View Image-->
-        <div id="imageModal" class="modalImage">
-          <span class="close" onclick="closeImageModal()">&times;</span>
-          <img class="modal-content-image" id="fullImage">
-        </div>
-
-
-
-        <div id="tab2" class="tab-content">
-          <!-- Content for Tab 1 goes here -->
-          <div class="tab1-main">
-            <div class="tab1-left">
-              <div class="slider">
-                  <img src="./img/pcu1.jpg" alt="Image 1">
+    <!-- Education Modal -->
+    <div id="myModal2" class="modal">
+      <div class="modal-content educationModal">
+          <span id="closeModalBtn2" class="close">&times;</span>
+        
+          <div id="tab1" class="tab-content">
+            <!-- Content for Tab 1 goes here -->
+            <div class="tab1-main">
+              <div class="tab1-left">
+                <div class="slider">
+                  <img src="./img/cvsu1.jpg" alt="Image 1">
                   <img src="#" alt="">
               </div>
               <div class="overlay">
-                  <div class="overlay-content">
-                      <img src="./img/pcu-logo.png" alt="Logo">
-                      <div class="content-text">
-                        <div class="by-paragh">
-                          <h3>Faith</h3>
-                          <p>We endeavor to cultivate Christian faith in the hearts of all our stakeholders, especially its students. The PCU’s value formation serves as a compass our stakeholders can use to navigate life toward a desired destination.</p>
-                        </div>
-                        <div class="by-paragh">
-                          <h3>Character</h3>
-                          <p>Every student is viewed as a work-in-progress that can mold into a person of character and of value to his/her family, community, country, and the world as a whole.</p>
-                        </div>
-                        <div class="by-paragh">
-                          <h3>Service</h3>
-                          <p>The University believes that its products must be men and women who always think beyond their own skins. Leading by example, it shows its students that achievements that benefit only one’s self is nothing. One’s worth is measured by what good has he/she done for others.</p>
-                        </div>
-                        <div class="button-con">
-                          <button onclick="window.location.href='https://dasma.pcu.edu.ph/about/'">Visit Site</button>
-                        </div>
-                        
+                <div class="overlay-content">
+                    <img src="./img/cvsu-logo.png" alt="Logo">
+                    <div class="content-text">
+                      <div class="by-paragh">
+                        <h3>Mission</h3>
+                        <p>Cavite State University shall provide excellent, equitable and relevant educational opportunities in the arts, sciences and technology through quality instruction and responsive research and development activities. It shall produce professional, skilled and morally upright individuals for global competitiveness.</p>
                       </div>
-                  </div>
-              </div>
-          </div>
-            <div class="tab2-right">
-              <div class="tab2-text">
-                <p class="inika-font">Senior Highschool</p>
-                <p class="lexend-font smallerSize">Philippine Christian University</p>
-                <p class="inter-font">SAMPALOC I DASMARINAS CAVITE</p>
-                <p class="inika-font">
-                  Technical Vocational Livelihood - Computer Programming <br>
-                  Graduated with "High Honor” <br>
-                  Computer Programming Best in Research <br>
-                  Graduates of 2019
-                </p>
-              </div>
-              <div class="tab2-card-images">
-                <div class="text-card-img">
-                  <p class="one-text">01</p>
-                  <div class="card onebigcard">
-                    <img src="./img/cvsu2.jpg" alt="" onclick="showImageModal(this)">
-                  </div>
+                      <div class="by-paragh">
+                        <h3>Vision</h3>
+                        <p>The premier university in historic Cavite globally recognized for excellence in character development, academics, research, innovation and sustainable community engagement.</p>
+                      </div>
+                      <div class="by-paragh">
+                        <h3>Quality Policy</h3>
+                        <p>We Commit to the highest standards of education, value our stakeholders, Strive for continual improvement of our products and services, and Uphold the University’s tenets of Truth, Excellence, and Service to produce globally competitive and morally upright individuals.</p>
+                      </div>
+                      <div class="button-con">
+                        <button onclick="window.location.href='https://cvsu.edu.ph/'">Visit Site</button>
+                      </div>
+                      
+                    </div>
                 </div>
-                <div class="text-card-img">
-                  <p>02</p>
-                  <div class="card">
-                    <img src="./img/cvsu3.jpg" alt="" onclick="showImageModal(this)">
-                  </div>
+            </div>
+              </div>
+              <div class="tab2-right">
+                <div class="tab2-text">
+                  <p class="inika-font">College</p>
+                  <p class="lexend-font">Cavite State University</p>
+                  <p class="inter-font">DON SEVERINO INDANG CAVITE</p>
+                  <p class="inika-font">
+                    Bachelor of Science and Information Technology <br>
+                    Graduated with Latin Honor “Magna cum Laude” <br>
+                    Consistent Dean’s Lister 2019-2023 <br>
+                    Graduates of 2023
+                  </p>
                 </div>
-                <div class="text-card-img">
-                  <p>03</p>
-                  <div class="card">
-                    <img src="./img/cvsu4.jpg" alt="" onclick="showImageModal(this)">
+                <div class="tab2-card-images">
+                  <div class="text-card-img">
+                    <p class="one-text">01</p>
+                    <div class="card onebigcard">
+                      <img src="./img/cvsu2.jpg" alt="" onclick="showImageModal(this)">
+                    </div>
+                  </div>
+                  <div class="text-card-img">
+                    <p>02</p>
+                    <div class="card">
+                      <img src="./img/cvsu3.jpg" alt="" onclick="showImageModal(this)">
+                    </div>
+                  </div>
+                  <div class="text-card-img">
+                    <p>03</p>
+                    <div class="card">
+                      <img src="./img/cvsu4.jpg" alt="" onclick="showImageModal(this)">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Tabs button -->
-        <div class="tabs">
-          <button class="tab-button" onclick="openTab('tab1')"><i class="fa-solid fa-arrow-left"></i></button>
-          <button class="tab-button" onclick="openTab('tab2')"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
 
+          <!-- The modal View Image-->
+          <div id="imageModal" class="modalImage">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content-image" id="fullImage">
+          </div>
+
+
+
+          <div id="tab2" class="tab-content">
+            <!-- Content for Tab 1 goes here -->
+            <div class="tab1-main">
+              <div class="tab1-left">
+                <div class="slider">
+                    <img src="./img/pcu1.jpg" alt="Image 1">
+                    <img src="#" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <img src="./img/pcu-logo.png" alt="Logo">
+                        <div class="content-text">
+                          <div class="by-paragh">
+                            <h3>Faith</h3>
+                            <p>We endeavor to cultivate Christian faith in the hearts of all our stakeholders, especially its students. The PCU’s value formation serves as a compass our stakeholders can use to navigate life toward a desired destination.</p>
+                          </div>
+                          <div class="by-paragh">
+                            <h3>Character</h3>
+                            <p>Every student is viewed as a work-in-progress that can mold into a person of character and of value to his/her family, community, country, and the world as a whole.</p>
+                          </div>
+                          <div class="by-paragh">
+                            <h3>Service</h3>
+                            <p>The University believes that its products must be men and women who always think beyond their own skins. Leading by example, it shows its students that achievements that benefit only one’s self is nothing. One’s worth is measured by what good has he/she done for others.</p>
+                          </div>
+                          <div class="button-con">
+                            <button onclick="window.location.href='https://dasma.pcu.edu.ph/about/'">Visit Site</button>
+                          </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="tab2-right">
+                <div class="tab2-text">
+                  <p class="inika-font">Senior Highschool</p>
+                  <p class="lexend-font smallerSize">Philippine Christian University</p>
+                  <p class="inter-font">SAMPALOC I DASMARINAS CAVITE</p>
+                  <p class="inika-font">
+                    Technical Vocational Livelihood - Computer Programming <br>
+                    Graduated with "High Honor” <br>
+                    Computer Programming Best in Research <br>
+                    Graduates of 2019
+                  </p>
+                </div>
+                <div class="tab2-card-images">
+                  <div class="text-card-img">
+                    <p class="one-text">01</p>
+                    <div class="card onebigcard">
+                      <img src="./img/cvsu2.jpg" alt="" onclick="showImageModal(this)">
+                    </div>
+                  </div>
+                  <div class="text-card-img">
+                    <p>02</p>
+                    <div class="card">
+                      <img src="./img/cvsu3.jpg" alt="" onclick="showImageModal(this)">
+                    </div>
+                  </div>
+                  <div class="text-card-img">
+                    <p>03</p>
+                    <div class="card">
+                      <img src="./img/cvsu4.jpg" alt="" onclick="showImageModal(this)">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabs button -->
+          <div class="tabs">
+            <button class="tab-button" onclick="openTab('tab1')"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="tab-button" onclick="openTab('tab2')"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+      </div>
     </div>
-  </div>
 
-  <div id="myModal3" class="modal">
-    <div class="modal-content educationModal">
-        <span id="closeModalBtn3" class="close">&times;</span>
-        <div class="main-skill-container">
-          <div class="left-con">
-            <div class="img-con-skill">
-              <div class="skill-circle">
-                <div class="circle-skills skill1">
-                  <img class="logoPL" src="./img/php-logo.png">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157 171" fill="none">
-                    <g filter="url(#filter0_d_96_2)">
-                      <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
-                      <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
-                    </g>
-                    <defs>
-                      <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset/>
-                        <feGaussianBlur stdDeviation="15"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#86A5F5"/>
-                        <stop offset="1" stop-color="#F1B1F2"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
+    <!-- Skill Modal -->
+    <div id="myModal3" class="modal">
+      <div class="modal-content educationModal">
+          <span id="closeModalBtn3" class="close">&times;</span>
+          <div class="main-skill-container">
+            <div class="left-con">
+              <div class="img-con-skill">
+                <div class="skill-circle">
+                  <div class="circle-skills skill1">
+                    <img class="logoPL" src="./img/php-logo.png">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157 171" fill="none">
+                      <g filter="url(#filter0_d_96_2)">
+                        <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
+                        <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset/>
+                          <feGaussianBlur stdDeviation="15"/>
+                          <feComposite in2="hardAlpha" operator="out"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#86A5F5"/>
+                          <stop offset="1" stop-color="#F1B1F2"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="circle-skills skill2">
+                    <img class="logoPL java" src="./img/java-logo.png">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="157" height="171" viewBox="0 0 157 171" fill="none">
+                      <g filter="url(#filter0_d_96_2)">
+                        <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
+                        <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset/>
+                          <feGaussianBlur stdDeviation="15"/>
+                          <feComposite in2="hardAlpha" operator="out"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#86A5F5"/>
+                          <stop offset="1" stop-color="#F1B1F2"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="circle-skills skill3">
+                    <img class="logoPL" src="./img/git-logo.png">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="157" height="171" viewBox="0 0 157 171" fill="none">
+                      <g filter="url(#filter0_d_96_2)">
+                        <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
+                        <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset/>
+                          <feGaussianBlur stdDeviation="15"/>
+                          <feComposite in2="hardAlpha" operator="out"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#86A5F5"/>
+                          <stop offset="1" stop-color="#F1B1F2"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="circle-skills skill4">
+                    <img class="logoPL" src="./img/sql-logo.png">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="157" height="171" viewBox="0 0 157 171" fill="none">
+                      <g filter="url(#filter0_d_96_2)">
+                        <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
+                        <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset/>
+                          <feGaussianBlur stdDeviation="15"/>
+                          <feComposite in2="hardAlpha" operator="out"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#86A5F5"/>
+                          <stop offset="1" stop-color="#F1B1F2"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="circle-skills skill5">
+                    <img class="logoPL" src="./img/python-logo.png">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="157" height="171" viewBox="0 0 157 171" fill="none">
+                      <g filter="url(#filter0_d_96_2)">
+                        <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
+                        <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset/>
+                          <feGaussianBlur stdDeviation="15"/>
+                          <feComposite in2="hardAlpha" operator="out"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#86A5F5"/>
+                          <stop offset="1" stop-color="#F1B1F2"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
                 </div>
-                <div class="circle-skills skill2">
-                  <img class="logoPL java" src="./img/java-logo.png">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="157" height="171" viewBox="0 0 157 171" fill="none">
-                    <g filter="url(#filter0_d_96_2)">
-                      <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
-                      <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
-                    </g>
-                    <defs>
-                      <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset/>
-                        <feGaussianBlur stdDeviation="15"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#86A5F5"/>
-                        <stop offset="1" stop-color="#F1B1F2"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="circle-skills skill3">
-                  <img class="logoPL" src="./img/git-logo.png">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="157" height="171" viewBox="0 0 157 171" fill="none">
-                    <g filter="url(#filter0_d_96_2)">
-                      <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
-                      <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
-                    </g>
-                    <defs>
-                      <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset/>
-                        <feGaussianBlur stdDeviation="15"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#86A5F5"/>
-                        <stop offset="1" stop-color="#F1B1F2"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="circle-skills skill4">
-                  <img class="logoPL" src="./img/sql-logo.png">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="157" height="171" viewBox="0 0 157 171" fill="none">
-                    <g filter="url(#filter0_d_96_2)">
-                      <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
-                      <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
-                    </g>
-                    <defs>
-                      <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset/>
-                        <feGaussianBlur stdDeviation="15"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#86A5F5"/>
-                        <stop offset="1" stop-color="#F1B1F2"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="circle-skills skill5">
-                  <img class="logoPL" src="./img/python-logo.png">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="157" height="171" viewBox="0 0 157 171" fill="none">
-                    <g filter="url(#filter0_d_96_2)">
-                      <path d="M78.5 30L126.564 57.75V113.25L78.5 141L30.4356 113.25V57.75L78.5 30Z" fill="#D9D9D9" fill-opacity="0.3" shape-rendering="crispEdges"/>
-                      <path d="M31.1856 58.183L78.5 30.866L125.814 58.183V112.817L78.5 140.134L31.1856 112.817V58.183Z" stroke="url(#paint0_linear_96_2)" stroke-width="1.5" shape-rendering="crispEdges"/>
-                    </g>
-                    <defs>
-                      <filter id="filter0_d_96_2" x="0.435547" y="0" width="156.129" height="171" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset/>
-                        <feGaussianBlur stdDeviation="15"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_2"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_2" result="shape"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_96_2" x1="78.5" y1="30" x2="78.5" y2="141" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#86A5F5"/>
-                        <stop offset="1" stop-color="#F1B1F2"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
+                <img src="./img/AI-me.png" alt="">
               </div>
-              <img src="./img/AI-me.png" alt="">
-            </div>
-            <!-- <p>Top 3 Programming Language</p> -->
-            <div class="top-skill">
-              <div class="item-PL">
-                <div class="itemImgCon redItem">
-                  <img src="./img/php-logo.png" alt="">
+              <!-- <p>Top 3 Programming Language</p> -->
+              <div class="top-skill">
+                <div class="item-PL">
+                  <div class="itemImgCon redItem">
+                    <img src="./img/php-logo.png" alt="">
+                  </div>
+                  <div class="item-text">
+                    <p>PHP</p>
+                    <p>9/10</p>
+                  </div>
                 </div>
-                <div class="item-text">
-                  <p>PHP</p>
-                  <p>9/10</p>
+                <div class="item-PL">
+                  <div class="itemImgCon blueItem">
+                    <img class="pythonItem" src="./img/python-logo.png" alt="">
+                  </div>
+                  <div class="item-text">
+                    <p>Python</p>
+                    <p>7/10</p>
+                  </div>
                 </div>
-              </div>
-              <div class="item-PL">
-                <div class="itemImgCon blueItem">
-                  <img class="pythonItem" src="./img/python-logo.png" alt="">
+                <div class="item-PL">
+                  <div class="itemImgCon greenItem">
+                    <img class="javaItem" src="./img/java-logo.png" alt="">
+                  </div>
+                  <div class="item-text">
+                    <p>Java</p>
+                    <p>6/10</p>
+                  </div>
                 </div>
-                <div class="item-text">
-                  <p>Python</p>
-                  <p>7/10</p>
-                </div>
-              </div>
-              <div class="item-PL">
-                <div class="itemImgCon greenItem">
-                  <img class="javaItem" src="./img/java-logo.png" alt="">
-                </div>
-                <div class="item-text">
-                  <p>Java</p>
-                  <p>6/10</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="right-con">
-            <div class="nav-skill">
-              <ul id="tab-list">
-                <li class="tab active" data-tab="language">Program Language</li>
-                <li class="tab" data-tab="tool">Software Tool</li>
-                <li class="tab" data-tab="skill">Personal Skill</li>
-                <li class="tab" data-tab="lang">Language</li>
-                <li class="tab" data-tab="other">Other</li>
-              </ul>
-            </div>
-            <div class="main-container">
-              <div id="language" class="tab-content-skill">
-                <div class="itemSkillLoader">
-                  <li><h3>PHP</h3>
-                      <span class="bar"><span class="php"></span></span>
-                  </li>
-                  <li><h3>Python</h3>
-                      <span class="bar"><span class="python"></span></span>
-                  </li>
-                  <li><h3>Java</h3>
-                      <span class="bar"><span class="java"></span></span>
-                  </li>
-                  <li><h3>Javascript</h3>
-                      <span class="bar"><span class="javascript"></span></span>
-                  </li>
-                  <li><h3>C++</h3>
-                      <span class="bar"><span class="cplus"></span></span>
-                  </li>
-                  <li><h3>SQL</h3>
-                      <span class="bar"><span class="sql"></span></span>
-                  </li>
-                  <li><h3>Git</h3>
-                      <span class="bar"><span class="git"></span></span>
-                  </li>
-                </div>
-              </div>
-              <div id="tool" class="tab-content-skill">
-                <div class="itemSkillLoader">
-                  <li><h3>VsCode</h3>
-                      <span class="bar"><span class="php"></span></span>
-                  </li>
-                  <li><h3>Figma</h3>
-                      <span class="bar"><span class="python"></span></span>
-                  </li>
-                  <li><h3>SASS</h3>
-                      <span class="bar"><span class="java"></span></span>
-                  </li>
-                </div>
-              </div>
-              <div id="skill" class="tab-content-skill">
-                <div class="itemSkillLoader">
-                  <li><h3>Communication</h3>
-                      <span class="bar"><span class="php"></span></span>
-                  </li>
-                  <li><h3>Problem Solving</h3>
-                      <span class="bar"><span class="python"></span></span>
-                  </li>
-                  <li><h3>Basic Troubleshooting</h3>
-                      <span class="bar"><span class="java"></span></span>
-                  </li>
-                  <li><h3>Collaborative</h3>
-                      <span class="bar"><span class="java"></span></span>
-                  </li>
-                  <li><h3>Leadership</h3>
-                      <span class="bar"><span class="java"></span></span>
-                  </li>
-                </div>
-              </div>
-              <div id="lang" class="tab-content-skill">
-                <div class="itemSkillLoader">
-                  <li><h3>Tagalog</h3>
-                      <span class="bar"><span class="php"></span></span>
-                  </li>
-                  <li><h3>English</h3>
-                      <span class="bar"><span class="python"></span></span>
-                  </li>
-                </div>
-              </div>
-              <div id="other" class="tab-content-skill">
-                <div class="itemSkillLoader">
-                  <li><h3>2D Graphic Designer</h3>
-                      <span class="bar"><span class="php"></span></span>
-                  </li>
-                  <li><h3>MS Word</h3>
-                      <span class="bar"><span class="python"></span></span>
-                  </li>
-                  <li><h3>Excel</h3>
-                      <span class="bar"><span class="python"></span></span>
-                  </li>
-                  <li><h3>Photoshop</h3>
-                      <span class="bar"><span class="python"></span></span>
-                  </li>
               </div>
             </div>
+            <div class="right-con">
+              <div class="nav-skill">
+                <ul id="tab-list">
+                  <li class="tab active" data-tab="language">Program Language</li>
+                  <li class="tab" data-tab="tool">Software Tool</li>
+                  <li class="tab" data-tab="skill">Personal Skill</li>
+                  <li class="tab" data-tab="lang">Language</li>
+                  <li class="tab" data-tab="other">Other</li>
+                </ul>
               </div>
-              
+              <div class="main-container">
+                <div id="language" class="tab-content-skill">
+                  <div class="itemSkillLoader">
+                    <li><h3>PHP</h3>
+                        <span class="bar"><span class="php"></span></span>
+                    </li>
+                    <li><h3>Python</h3>
+                        <span class="bar"><span class="python"></span></span>
+                    </li>
+                    <li><h3>Java</h3>
+                        <span class="bar"><span class="java"></span></span>
+                    </li>
+                    <li><h3>Javascript</h3>
+                        <span class="bar"><span class="javascript"></span></span>
+                    </li>
+                    <li><h3>C++</h3>
+                        <span class="bar"><span class="cplus"></span></span>
+                    </li>
+                    <li><h3>SQL</h3>
+                        <span class="bar"><span class="sql"></span></span>
+                    </li>
+                    <li><h3>Git</h3>
+                        <span class="bar"><span class="git"></span></span>
+                    </li>
+                  </div>
+                </div>
+                <div id="tool" class="tab-content-skill">
+                  <div class="itemSkillLoader">
+                    <li><h3>VsCode</h3>
+                        <span class="bar"><span class="php"></span></span>
+                    </li>
+                    <li><h3>Figma</h3>
+                        <span class="bar"><span class="python"></span></span>
+                    </li>
+                    <li><h3>SASS</h3>
+                        <span class="bar"><span class="java"></span></span>
+                    </li>
+                  </div>
+                </div>
+                <div id="skill" class="tab-content-skill">
+                  <div class="itemSkillLoader">
+                    <li><h3>Communication</h3>
+                        <span class="bar"><span class="php"></span></span>
+                    </li>
+                    <li><h3>Problem Solving</h3>
+                        <span class="bar"><span class="python"></span></span>
+                    </li>
+                    <li><h3>Basic Troubleshooting</h3>
+                        <span class="bar"><span class="java"></span></span>
+                    </li>
+                    <li><h3>Collaborative</h3>
+                        <span class="bar"><span class="java"></span></span>
+                    </li>
+                    <li><h3>Leadership</h3>
+                        <span class="bar"><span class="java"></span></span>
+                    </li>
+                  </div>
+                </div>
+                <div id="lang" class="tab-content-skill">
+                  <div class="itemSkillLoader">
+                    <li><h3>Tagalog</h3>
+                        <span class="bar"><span class="php"></span></span>
+                    </li>
+                    <li><h3>English</h3>
+                        <span class="bar"><span class="python"></span></span>
+                    </li>
+                  </div>
+                </div>
+                <div id="other" class="tab-content-skill">
+                  <div class="itemSkillLoader">
+                    <li><h3>2D Graphic Designer</h3>
+                        <span class="bar"><span class="php"></span></span>
+                    </li>
+                    <li><h3>MS Word</h3>
+                        <span class="bar"><span class="python"></span></span>
+                    </li>
+                    <li><h3>Excel</h3>
+                        <span class="bar"><span class="python"></span></span>
+                    </li>
+                    <li><h3>Photoshop</h3>
+                        <span class="bar"><span class="python"></span></span>
+                    </li>
+                </div>
+              </div>
+                </div>
+                
+            </div>
+            
           </div>
           
-        </div>
-        
+      </div>
     </div>
-  </div>
 
-  <div id="myModal4" class="modal">
+    <!-- Awards Modal -->
+    <div id="myModal4" class="modal">
     <div class="modal-content awardModal">
         <span id="closeModalBtn4" class="close">&times;</span>
         <div class="main-award-con">
@@ -831,180 +908,180 @@
         </div>
       </div>
     </div>
-  <!-- </div> -->
-
-  <div id="popup" class="popup">
-    <div class="overlay2"></div>
-    <div class="popup-content">
-      <div class="three-dotted">
-        <div class="green-circle"></div>
-        <div class="green-circle"></div>
-        <div class="green-circle"></div>
-      </div>
-      <div class="main-con-cert">
-        <!-- TAB1 -->
-        <div class="first-cert-sec active" id="cert1">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert1.jpg" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>CISCO NETWORKING ACADEMY</p>
-            <h3>PYTHON ESSENTIALS</h3>
-            <p>September 25, 2023</p>
-          </div>
+    
+    <!-- Certificate Modal -->
+    <div id="popup" class="popup">
+      <div class="overlay2"></div>
+      <div class="popup-content">
+        <div class="three-dotted">
+          <div class="green-circle"></div>
+          <div class="green-circle"></div>
+          <div class="green-circle"></div>
         </div>
-
-        <!-- TAB2 -->
-        <div class="first-cert-sec" id="cert2">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert2.jpg" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>LEARNSQL.COM</p>
-            <h3>SQL PRACTICE SET IN POSTGRE</h3>
-            <p>September 09, 2023</p>
-          </div>
-        </div>
-
-        <!-- TAB3 -->
-        <div class="first-cert-sec" id="cert3">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert3.jpg" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>OPEN WEAVER</p>
-            <h3>BASIC OF JAVASCRIPT PROGRAM</h3>
-            <p>November 16, 2022</p>
-          </div>
-        </div>
-
-        <!-- TAB4 -->
-        <div class="first-cert-sec" id="cert4">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert4.jpg" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>ZUITT BOOTCAMP</p>
-            <h3>END-END DEVELOPMENT</h3>
-            <p>By: Morgan Lopes</p>
-            <p>November 10, 2022</p>
-          </div>
-        </div>
-
-        <!-- TAB5 -->
-        <div class="first-cert-sec" id="cert5">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert5.jpg" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>DICT-REGION IV-A AND IV-B</p>
-            <h3>MALICIOUS SOFTWARE AWARENESS</h3>
-            <p>By: Cheryl C. Ortega</p>
-            <p>November 10, 2022</p>
-          </div>
-        </div>
-
-        <!-- TAB6 -->
-        <div class="first-cert-sec" id="cert6">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert6.jpg" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>INTELLECTUAL PROPERTY OF THE PHILIPPINES</p>
-            <h3>INTRO TO COPYRIGHT</h3>
-            <p>October 11, 2022</p>
-          </div>
-        </div>
-
-        <!-- TAB7 -->
-        <div class="first-cert-sec" id="cert7">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert7.jpg" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>INTELLECTUAL PROPERTY OF THE PHILIPPINES</p>
-            <h3>INTRO TO PATENT, UTILITY MODEL</h3>
-            <p>October 25, 2022</p>
-          </div>
-        </div>
-
-        <!-- TAB8 -->
-        <div class="first-cert-sec" id="cert8">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert8.png" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>EDUKASYON.PH AND AWS</p>
-            <h3>AUTOMATING AWS INFRASTRUCTURE</h3>
-            <p>September 6, 2022</p>
-          </div>
-        </div>
-
-        <!-- TAB9 -->
-        <div class="first-cert-sec" id="cert9">
-          <!-- LEFT -->
-          <div class="left-cert">
-            <img src="./img/cert/cert9.jpg" alt="">
-          </div>
-          <!-- RIGHT -->
-          <div class="right-cert">
-            <p>KALIBRR X ZUITT BOOTCAMP</p>
-            <h3>WEB PROFILE WORKSHOP</h3>
-            <p>September 10-11, 2022</p>
-          </div>
-        </div>
-
-        <!-- Scrollable TABS -->
-        <div class="scroll-container">
-          <div class="second-cert-sec">
-            <div class="item-cert" data-tab="cert1">
-              <img src="./img/cert/cert1.jpg">
+        <div class="main-con-cert">
+          <!-- TAB1 -->
+          <div class="first-cert-sec active" id="cert1">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert1.jpg" alt="">
             </div>
-            <div class="item-cert" data-tab="cert2">
-              <img src="./img/cert/cert2.jpg">
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>CISCO NETWORKING ACADEMY</p>
+              <h3>PYTHON ESSENTIALS</h3>
+              <p>September 25, 2023</p>
             </div>
-            <div class="item-cert" data-tab="cert3">
-              <img src="./img/cert/cert3.jpg">
+          </div>
+
+          <!-- TAB2 -->
+          <div class="first-cert-sec" id="cert2">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert2.jpg" alt="">
             </div>
-            <div class="item-cert"  data-tab="cert4">
-              <img src="./img/cert/cert4.jpg">
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>LEARNSQL.COM</p>
+              <h3>SQL PRACTICE SET IN POSTGRE</h3>
+              <p>September 09, 2023</p>
             </div>
-            <div class="item-cert"  data-tab="cert5">
-              <img src="./img/cert/cert5.jpg">
+          </div>
+
+          <!-- TAB3 -->
+          <div class="first-cert-sec" id="cert3">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert3.jpg" alt="">
             </div>
-            <div class="item-cert" data-tab="cert6">
-              <img src="./img/cert/cert6.jpg">
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>OPEN WEAVER</p>
+              <h3>BASIC OF JAVASCRIPT PROGRAM</h3>
+              <p>November 16, 2022</p>
             </div>
-            <div class="item-cert" data-tab="cert7">
-              <img src="./img/cert/cert7.jpg">
+          </div>
+
+          <!-- TAB4 -->
+          <div class="first-cert-sec" id="cert4">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert4.jpg" alt="">
             </div>
-            <div class="item-cert" data-tab="cert8">
-              <img src="./img/cert/cert8.png">
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>ZUITT BOOTCAMP</p>
+              <h3>END-END DEVELOPMENT</h3>
+              <p>By: Morgan Lopes</p>
+              <p>November 10, 2022</p>
             </div>
-            <div class="item-cert" data-tab="cert9">
-              <img src="./img/cert/cert9.jpg">
+          </div>
+
+          <!-- TAB5 -->
+          <div class="first-cert-sec" id="cert5">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert5.jpg" alt="">
+            </div>
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>DICT-REGION IV-A AND IV-B</p>
+              <h3>MALICIOUS SOFTWARE AWARENESS</h3>
+              <p>By: Cheryl C. Ortega</p>
+              <p>November 10, 2022</p>
+            </div>
+          </div>
+
+          <!-- TAB6 -->
+          <div class="first-cert-sec" id="cert6">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert6.jpg" alt="">
+            </div>
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>INTELLECTUAL PROPERTY OF THE PHILIPPINES</p>
+              <h3>INTRO TO COPYRIGHT</h3>
+              <p>October 11, 2022</p>
+            </div>
+          </div>
+
+          <!-- TAB7 -->
+          <div class="first-cert-sec" id="cert7">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert7.jpg" alt="">
+            </div>
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>INTELLECTUAL PROPERTY OF THE PHILIPPINES</p>
+              <h3>INTRO TO PATENT, UTILITY MODEL</h3>
+              <p>October 25, 2022</p>
+            </div>
+          </div>
+
+          <!-- TAB8 -->
+          <div class="first-cert-sec" id="cert8">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert8.png" alt="">
+            </div>
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>EDUKASYON.PH AND AWS</p>
+              <h3>AUTOMATING AWS INFRASTRUCTURE</h3>
+              <p>September 6, 2022</p>
+            </div>
+          </div>
+
+          <!-- TAB9 -->
+          <div class="first-cert-sec" id="cert9">
+            <!-- LEFT -->
+            <div class="left-cert">
+              <img src="./img/cert/cert9.jpg" alt="">
+            </div>
+            <!-- RIGHT -->
+            <div class="right-cert">
+              <p>KALIBRR X ZUITT BOOTCAMP</p>
+              <h3>WEB PROFILE WORKSHOP</h3>
+              <p>September 10-11, 2022</p>
+            </div>
+          </div>
+
+          <!-- Scrollable TABS -->
+          <div class="scroll-container">
+            <div class="second-cert-sec">
+              <div class="item-cert" data-tab="cert1">
+                <img src="./img/cert/cert1.jpg">
+              </div>
+              <div class="item-cert" data-tab="cert2">
+                <img src="./img/cert/cert2.jpg">
+              </div>
+              <div class="item-cert" data-tab="cert3">
+                <img src="./img/cert/cert3.jpg">
+              </div>
+              <div class="item-cert"  data-tab="cert4">
+                <img src="./img/cert/cert4.jpg">
+              </div>
+              <div class="item-cert"  data-tab="cert5">
+                <img src="./img/cert/cert5.jpg">
+              </div>
+              <div class="item-cert" data-tab="cert6">
+                <img src="./img/cert/cert6.jpg">
+              </div>
+              <div class="item-cert" data-tab="cert7">
+                <img src="./img/cert/cert7.jpg">
+              </div>
+              <div class="item-cert" data-tab="cert8">
+                <img src="./img/cert/cert8.png">
+              </div>
+              <div class="item-cert" data-tab="cert9">
+                <img src="./img/cert/cert9.jpg">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
 </body>
 </html>
@@ -1018,3 +1095,5 @@
 <script src="./js/modal2.js"></script>
 <script src="./js/tabs-cert.js"></script>
 <script src="./js/cert-tab-highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./js/swiper.js"></script>
