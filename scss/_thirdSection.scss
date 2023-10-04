@@ -67,5 +67,17 @@
     }
     .right-sec-third{
         width: 50%;
+        height: 100vh;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-container-proj{
+            padding: 20px;
+            width: 80%;
+            height: 90%;
+            border-radius: 10px;
+            background-color: #fff;
+        }
     }
 }
