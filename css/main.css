@@ -1523,6 +1523,12 @@ nav .rightBar button:hover {
   width: 100%;
   height: 100vh;
 }
+.third-sec-main .tab-project-route {
+  display: none;
+}
+.third-sec-main .tab-project-route.active {
+  display: block;
+}
 .third-sec-main .left-sec-third {
   padding: 30px;
   width: 60%;
