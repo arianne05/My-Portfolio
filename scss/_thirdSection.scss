@@ -25,6 +25,10 @@
             flex-direction: column;
             justify-content: center;
 
+            .features{
+                display: flex;
+                // border: 1px solid white;
+            }
             h3{
                 color: $primary-white-text;
                 font-size: 60px;
@@ -33,6 +37,15 @@
             p{
                 font-family: 'Inter';
                 color: $secondary-white-text;
+            }
+            ul,li{
+                color: $primary-white-text;
+                font-family: 'Inter';
+                color: $secondary-white-text;
+                margin-left: 15px;
+            }
+            .rightUL{
+                margin-left: 200px;
             }
         }
 
