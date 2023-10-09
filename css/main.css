@@ -1656,11 +1656,12 @@ nav .rightBar button:hover {
   font-size: 12px;
 }
 .third-sec-main .right-sec-third .header-img {
-  border: 1px solid rgb(192, 192, 192);
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  display: none;
 }
-.third-sec-main .right-sec-third .header-img img {
+.third-sec-main .right-sec-third .header-img.active {
+  display: block; /* Change from "border" and "box-shadow" to "display" */
+}
+.third-sec-main .right-sec-third .header-img.active img {
   width: 100%;
   height: auto;
   border-radius: 10px;

@@ -155,16 +155,29 @@
             }
         }
 
-        .header-img{
-            border: 1px solid rgb(192, 192, 192);
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-            img{
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
+        .header-img {
+            display: none;
         }
+        
+        .header-img.active {
+            display: block; /* Change from "border" and "box-shadow" to "display" */
+        }
+        .header-img.active img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        // .header-img .active{
+        //     border: 1px solid rgb(192, 192, 192);
+        //     border-radius: 10px;
+        //     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        //     img{
+        //         width: 100%;
+        //         height: auto;
+        //         border-radius: 10px;
+        //     }
+        // }
 
         .all-img-preview{
             display: flex;
