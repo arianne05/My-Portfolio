@@ -242,13 +242,14 @@
                 <div class="card-wrapper swiper-wrapper">
                   
                   <div class="card swiper-slide">
-                    <img src="./img//projects/patient-rms/Dashboard.png" alt="" onclick="showProjectModal(this)">
+                    <img src="./img//projects/patient-rms/Dashboard.png" alt=""  onclick="showImageModal(this)">
                   </div>
                 
   
                   <!-- Per Slide Item -->
                   <div class="card swiper-slide">
-                    <img src="./img/award1.jpg" alt="" onclick="showProjectModal(this)">
+                    <!-- <img src="./img/award1.jpg" alt="" onclick="showProjectModal(this)"> -->
+                    <img src="./img/award1.jpg" alt="" onclick="showImageModal(this)">
                   </div>
   
                  <!-- Per Slide Item -->
@@ -429,9 +430,9 @@
           </div>
 
           <!-- PROJECT VIEW MODAL -->
-          <div id="imageProject" class="modalImageProject">
-            <span class="closeProject" onclick="closeProjectModal()">&times;</span>
-            <img class="modal-content-image-project" id="fullImageProject">
+          <div id="imageModal" class="modalImage">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content-image" id="fullImage">
           </div>
           
         </div>
@@ -1362,4 +1363,3 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./js/swiper.js"></script>
 <script src="./js/tab-project.js"></script>
-<script src="./js/viiew-project.js"></script>
