@@ -1523,6 +1523,12 @@ nav .rightBar button:hover {
   width: 100%;
   height: 100vh;
 }
+.third-sec-main .tab-project-route {
+  display: none;
+}
+.third-sec-main .tab-project-route.active {
+  display: block;
+}
 .third-sec-main .left-sec-third {
   padding: 30px;
   width: 60%;
@@ -1534,6 +1540,9 @@ nav .rightBar button:hover {
   flex-direction: column;
   justify-content: center;
 }
+.third-sec-main .left-sec-third .text-sec .features {
+  display: flex;
+}
 .third-sec-main .left-sec-third .text-sec h3 {
   color: #F3F3F3;
   font-size: 60px;
@@ -1542,6 +1551,15 @@ nav .rightBar button:hover {
 .third-sec-main .left-sec-third .text-sec p {
   font-family: "Inter";
   color: #D9D9D9;
+}
+.third-sec-main .left-sec-third .text-sec ul, .third-sec-main .left-sec-third .text-sec li {
+  color: #F3F3F3;
+  font-family: "Inter";
+  color: #D9D9D9;
+  margin-left: 15px;
+}
+.third-sec-main .left-sec-third .text-sec .rightUL {
+  margin-left: 200px;
 }
 .third-sec-main .left-sec-third .slide-container {
   width: 100%;
@@ -1650,11 +1668,12 @@ nav .rightBar button:hover {
   font-size: 12px;
 }
 .third-sec-main .right-sec-third .header-img {
-  border: 1px solid rgb(192, 192, 192);
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  display: none;
 }
-.third-sec-main .right-sec-third .header-img img {
+.third-sec-main .right-sec-third .header-img.active {
+  display: block; /* Change from "border" and "box-shadow" to "display" */
+}
+.third-sec-main .right-sec-third .header-img.active img {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -1662,6 +1681,7 @@ nav .rightBar button:hover {
 .third-sec-main .right-sec-third .all-img-preview {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .third-sec-main .right-sec-third .all-img-preview img {
   cursor: pointer;
@@ -1673,6 +1693,90 @@ nav .rightBar button:hover {
 }
 .third-sec-main .right-sec-third .all-img-preview img:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con {
+  margin-bottom: 20px;
+  width: 45%;
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con img {
+  margin: 0;
+  width: 100%;
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con .img-container-prev {
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con .over-text-lay {
+  border-radius: 10px;
+  position: absolute; /* Position the overlay text absolutely within .img-prev-con */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+  color: #ffffff; /* Text color */
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.third-sec-main .right-sec-third .all-img-preview .img-prev-con:hover .over-text-lay {
+  opacity: 1;
+  color: #ffffff;
+  /* Add any additional styling for the overlay text on hover here */
+}
+.third-sec-main .right-sec-third .all-img-preview .text-prev {
+  display: flex;
+  justify-content: space-between;
+}
+.third-sec-main .right-sec-third .all-img-preview .circle-with-text {
+  display: flex;
+}
+.third-sec-main .right-sec-third .all-img-preview .circle-with-text .circle {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: green;
+}
+.third-sec-main .right-sec-third .all-img-preview .over-text-lay {
+  display: none;
+}
+.third-sec-main .right-sec-third .all-img-preview .over-text-lay:hover {
+  color: red;
+}
+
+/* Styles for the modal */
+.modalImageProject {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.modal-content-image-project {
+  max-width: 60%;
+  max-height: 60%;
+  margin: auto;
+}
+
+.closeProject {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 * {
