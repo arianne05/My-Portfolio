@@ -259,8 +259,33 @@
     }
 }
 
+// VIEW PROJECT IMAGE
+/* Styles for the modal */
+.modalImageProject {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
 
-  
-//   .text-sec.active {
-//     display: block;
-//   }
+.modal-content-image-project {
+    max-width: 60%;
+    max-height: 60%;
+    margin: auto;
+}
+
+.closeProject {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
