@@ -1779,6 +1779,10 @@ nav .rightBar button:hover {
   cursor: pointer;
 }
 
+.fourthSection {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
